@@ -96,3 +96,56 @@ switch(instituicao){
     default: log("Não é institui~]ao");
 }
 
+//Funçções Assíncronas permitem executar operações 
+//sem bloquear a execução do código
+
+async function buscarDados() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Dados recebidos"), 4*1000);
+    });
+}
+
+async function executarBusca() {
+    log("Buscando...");
+
+    let resultado = buscarDados();
+
+    log(resultado);
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo() {
+    log("Executei por metodo normal");
+}
+
+log(meuMetodo);
+
+const objTeste = {
+    oi(){
+        log("OI");
+    },
+    xau() {
+        log("XAU");
+    }
+}
+
+objTeste.oi();
+objTeste.xau();
+
+
+//Manipulação do DOM
+//Aqui criamos um elemento dinamicamente e o
+//adicionamos ao corpo da página
+
+document.addEventListener("DOMContentLoaded", () => {
+    let titulo = document.createElement("h2");
+    titulo.innerText = "Olá DOM";
+    document.body.appendChild(titulo);
+})
+
+
+function toggleImagem() {
+    let img = document.getElementById("minhaImagem");
+    img.style.display = img.style.display === "none" ? "block" : "none";
+}
