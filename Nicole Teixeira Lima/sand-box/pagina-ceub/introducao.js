@@ -56,12 +56,12 @@ log (n2 === valorNumericoStr) ;
 log (((n2 > n1) || (n2 > n1)) && (1 > 2));
 
 //manipulação de arrays
-let frutas = ("Maça", "Banana","Laranja");
-log (frutas.lenght); 
+let frutas = ["Maça", "Banana","Laranja"];
+log (frutas.length); 
 log(frutas[1]);
 
 //adicionando novo item
-frutas.push ("Manga");
+frutas.push("Manga");
 
 log(frutas);
 
@@ -111,4 +111,49 @@ while (valorWhile < 5)
 {
     log(`Meu valor no loop: ${valorWhile}`);
     valorWhile++;
+}
+
+function buscarDados ()
+{
+    async function buscarDados() 
+    {
+        return new Promise (resolve => {
+            setTimeout (() => resolve ("Dados Recebidos"), 4*1000);
+        });
+    }
+    async function executarBusca(){
+        log ("Buscando . . .");
+        let resultado = buscarDados();
+        log(resultado);
+    }
+    executarBusca();
+
+    const meuMetodo = function exemploMetodo() {
+        log("Executei por metodo normal")
+    };
+    log(meuMetodo);
+}
+
+const objTeste = {
+    oi() {
+        log("OI");
+    },
+    xau(){
+        log ("XAU");
+    }
+};
+
+objTeste.oi();
+objTeste.xau();
+
+//Manipulação do DOM
+document.addEventListener("DOMContentLoaded", () => {
+    let titulo= document.createElement("h2");
+    titulo.innerText = "Olá DOM";
+    document.body.appendChild(titulo);
+});
+
+function toggleImagem() {
+    let img = document.getElementById("minhaImagem");
+    img.style.display = img.style.display === "none" ? "block" : "none";
 }
