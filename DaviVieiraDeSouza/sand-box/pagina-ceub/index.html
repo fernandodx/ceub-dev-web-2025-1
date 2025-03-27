@@ -1,13 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="introducao.js"></script>
+<html>
+    <head>
+        <script src="introducao.js"></script>
+    </head>
+    <body>
+        <h1>HOME</h1>
+        <hr>
+        
+        <img id="minhaImagem" src="https://docente.ceub.br/Images/logoceub-nome.png"
+            width="200"
+            height="100">
 
-    <title>Pagina Ceub</title>
-</head>
-<body>
+        <button onclick="toggleImagem()">Mostrar/Ocultar</button>
+        <hr>
 
-    <h1>HOME</h1>
-    
-</body>
+        <select id="meuCombo" onblur="mostrarValorCombo()">
+            <option value="opcao1">Opção1</option>
+            <option value="opcao2">Opção2</option>
+            <option value="opcao3">Opção3</option>
+        </select>
+        <button onclick="mostrarValorCombo()">Exibir Valor da Combo</button>
+        
+        <hr>
+
+        <input type="radio" name="tamanho" value="pequeno">Pequeno 
+        <input type="radio" name="tamanho" value="medio">Médio
+        <input type="radio" name="tamanho" value="grande">Grande
+
+        <button ondblclick="mostrarValorRadio()">Mostrar Radio Selecionado</button>
+
+        <hr>
+        
+
+        <input type="checkbox" name="interesse" value="Musica">Música
+        <input type="checkbox" name="interesse" value="Esporte">Esporte
+        <input type="checkbox" name="interesse" value="Video-Game">Video-Game
+        <button onclick="mostrarInteresses()">Mostrar Interesses: </button>
+
+    </body>
 </html>
