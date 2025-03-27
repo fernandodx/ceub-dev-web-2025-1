@@ -142,10 +142,39 @@ document.addEventListener("DOMContentLoaded", () => {
     let titulo = document.createElement("h2");
     titulo.innerText = "Olá DOM";
     document.body.appendChild(titulo);
-})
+});
 
 
 function toggleImagem() {
     let img = document.getElementById("minhaImagem");
     img.style.display = img.style.display === "none" ? "block" : "none";
+}
+
+function mostrarValorCombo() {
+    let combo = document.getElementById("meuCombo");
+    alert("Valor selecionado: " + combo.value);
+}
+
+function mostrarValorRadio() {
+    let radios = document.getElementsByName("tamanho");
+    
+    for(let radio of radios) {
+        if(radio.checked) {
+            alert("Opção selecionada: " + radio.value);
+            break;
+        }
+    }
+}
+
+function mostrarValorSelecionado() {
+    let selecionados = [];
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    checkboxes.forEach(function(checkbox) {
+        selecionados.push(checkbox.nextElementSibling.textContent); // Adiciona o texto da opção ao array
+    });
+    if (selecionados.length > 0) {
+        alert("Você selecionou: " + selecionados.join(", "));
+    } else {
+        alert("Nenhuma opção selecionada.");
+    }
 }
