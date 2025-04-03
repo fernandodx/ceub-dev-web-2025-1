@@ -9,5 +9,34 @@
         width = "200"
         height="100">
         <button id = "meuButao" onclick= "toggleImagem()" > Mostrar/Ocultar </button>
+
+        <hr> 
+
+        <select id = "meuCombo" onblur="mostrarValorcombo()">
+            <option value = "opcao1"> Opcao 1 </option>
+            <option value = "opcao2"> Opcao 2 </option>
+            <option value = "opcao3"> Opcao 3 </option>
+            <option value = "opcao4"> Opcao 4 </option>
+        </select>
+
+        <button onclick="mostrarValorcombo()"> Exibir valor da Combo </button>
+
+        <hr> 
+        <input type="radio" name="tamanho" value="pequeno">Pequeno
+        <input type="radio" name="tamanho" value="medio">Medio
+        <input type="radio" name="tamanho" value="grande">Grande
+
+        <button ondblclick="mostrarValorRadio()"> Mostrar Radio selecionado </button>
+
+
+        <hr>
+
+        <label>Interesse:</label><br>
+        <input type="checkbox" name="interesse" value="musica"> Música<br>
+        <input type="checkbox" name="interesse" value="esportes"> Esportes<br>
+        <input type="checkbox" name="interesse" value="academia"> Academia<br>
+        <input type="checkbox" name="interesse" value="natacao"> Natação<br>
+        <button id="btnInteresses" onclick="mostrarInteresses()">Exibir interesses selecionados</button>        
+
     </body>
 </html>
