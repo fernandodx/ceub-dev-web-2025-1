@@ -168,4 +168,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   }
+
+  function mostrarValorCombo() {
+
+    let combo = document.getElementById("meuCombo");
+      alert("Valor selecionado: " + combo.value);
+  }
   
+
+  function mostrarValoRadio(){
+
+      let radios = document.getElementsByName("tamanho");
+
+      for(let radio of radios) {
+        if (radio.checked){
+          alert("Opção selecionada: " + radio.value);
+          break;
+
+
+      }
+    }
+  }
+
+  function mostrarMusicaSelecionada(){
+
+    let musicas = document.getElementsByName("musica");
+
+    for(let musica of musicas) {
+      if (musica.checkbox){
+        alert("Opção selecionada: " + musica.value);
+        break;
+      
+      
+}}}
+
+function mostrarInteresses(){
+
+  let interesses = document.getElementsByName("interesse");
+  let arr = []
+  let str = ", "
+
+  for (let interesse of interesses) {
+    if (interesse.checked)
+      arr += interesse.value + str
+    }
+
+      alert("Interesses selecionados: " + arr);
+    
+    
+  }
