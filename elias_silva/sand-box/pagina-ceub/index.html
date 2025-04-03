@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Morpho Automations</title>
-    <script src="./introducao.js"></script>
+    <script>
+        function toggleImagem() {
+            var img = document.getElementById("minhaImagem");
+            if (img.style.display === "none") {
+                img.style.display = "block";
+                img.style.margin = "20px auto"; // Centraliza ao exibir novamente
+            } else {
+                img.style.display = "none";
+            }
+        }
+    </script>
     <style>
         body {
             background-color: #0A1931; /* Azul escuro */
@@ -14,10 +24,10 @@
             padding: 20px;
         }
         h1 {
-            color: #004a8f; /* Azul claro */
+            color: #00A8E8; /* Azul claro */
         }
         button {
-            background-color: #004a8f;
+            background-color: #00A8E8;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -30,11 +40,12 @@
             background-color: #0077B6;
         }
         img {
-            margin-top: 20px;
+            margin: 20px auto;
+            display: block;
             border-radius: 10px;
         }
         hr {
-            border: 1px solid #004a8f;
+            border: 1px solid #00A8E8;
             margin: 20px auto;
             width: 80%;
         }
@@ -45,6 +56,6 @@
     <hr>
     <img src="https://morphoautomacoes.com.br/icons/logo-morpho-automacao-contabil.png" alt="Logo Morpho" id="minhaImagem" width="100">
     <br>
-    <button onclick="toogleImagem()">Mostrar/Ocultar</button>
+    <button onclick="toggleImagem()">Mostrar/Ocultar</button>
 </body>
 </html>
