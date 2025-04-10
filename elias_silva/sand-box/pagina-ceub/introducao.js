@@ -1,6 +1,6 @@
 //Se precisar comentar use //
 
-var ola = "Olá Mundo! TESTE";
+var ola = "Olá Mundo! JS";
 console.log(ola);
 
 function log(valor) {
@@ -12,7 +12,7 @@ function log(valor) {
 var valor = 10;
 log(typeof valor); //number
 
-var palavra = "Elias";
+var palavra = "Fernando";
 log(typeof palavra); // string
 
 var isOK = true;
@@ -108,53 +108,4 @@ let valorWhile = 0;
 while (valorWhile < 5) {
   log(`Meu valor no loop: ${valorWhile}`);
   valorWhile++;
-}
-
-log("AQUIIII")
-// FUNÇÕES ASSINCRONAS PERMITEM EXECUTAR OPERAÇÕES
-// SEM BLOQUEAR A EXECUÇÃO DO CÓDIGO
-async function buscarDados() {
-  return new Promise(resolve => {
-    setTimeout(() => resolve("Dados Recebidos"), 4*1000)
-  });
-};
-
-async function executarBusca() {
-  log("Buscando...")
-
-  let resultado = await buscarDados();
-
-  log(resultado)
-}
-
-const meuMetodo = function exemploMetadado(){
-  log("Executei por metodo normal")
-}
-
-executarBusca();
-
-const objTeste = {
-  oi(){
-    log("Oi")
-  },
-  xau(){
-    log("Xau")
-  }
-}
-
-objTeste.oi();
-objTeste.xau();
-
-// Manipulação do Dom 
-
-document.addEventListener("DOMContentLoaded", () => {
-  let titulo = document.createElement("h2");
-  titulo.innerText = "Morrpho Automações";
-
-  document.body.appendChild(titulo);
-})
-
-function toogleImagem(){
-  let img = document.getElementById("minhaImagem");
-  img.style.display = img.style.display === "none" ? "block" : "None"
 }
