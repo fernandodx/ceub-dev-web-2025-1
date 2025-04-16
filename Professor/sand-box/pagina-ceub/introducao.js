@@ -109,3 +109,84 @@ while (valorWhile < 5) {
   log(`Meu valor no loop: ${valorWhile}`);
   valorWhile++;
 }
+
+//Funções Assíncronas permitem executar operações
+// sem bloquear a execução do código
+async function buscarDados() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve("Dados Recebidos"), 4 * 1000);
+  });
+}
+
+async function executarBusca() {
+  log("Buscando...");
+
+  let resultado = await buscarDados();
+
+  log(resultado);
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo() {
+  log("Execeutei por metodo normal");
+};
+
+log(meuMetodo);
+
+const objTeste = {
+  oi() {
+    log("OI");
+  },
+  xau() {
+    log("XAU");
+  },
+};
+
+objTeste.oi();
+objTeste.xau();
+
+//Manipulação do DOM
+//Aqui criamos um elemento dinamicamente e o adicionamos ao corpo da página
+document.addEventListener("DOMContentLoaded", () => {
+  let titulo = document.createElement("h2");
+  titulo.innerText = "Olá DOM";
+  document.body.appendChild(titulo);
+});
+
+function toggleImagem() {
+  let img = document.getElementById("minhaImagem");
+  img.style.display = img.style.display === "none" ? "block" : "none";
+}
+
+function mostrarValorCombo() {
+  let combo = document.getElementById("meuCombo");
+  alert("Valor selecionado: " + combo.value);
+}
+
+function mostrarValorRadio() {
+  let radios = document.getElementsByName("tamanho");
+
+  for (let radio of radios) {
+    if (radio.checked) {
+      alert("Opção selecionada: " + radio.value);
+      break;
+    }
+  }
+}
+
+function mostrarValorCheckbox() {
+  let checkboxs = document.getElementsByName("interesse");
+  let selecionados = [];
+
+  for (let checkbox of checkboxs) {
+    if (checkbox.checked) {
+      selecionados.push(checkbox.value);
+    }
+  }
+
+  alert(
+    "Selecionados: " +
+      (selecionados.length > 0 ? selecionados.join(", ") : "Nenhum")
+  );
+}
