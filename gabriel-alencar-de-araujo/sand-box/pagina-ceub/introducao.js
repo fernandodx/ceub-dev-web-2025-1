@@ -152,3 +152,30 @@ function toggleImagem() {
     let img = document.getElementById("minhaImagem") 
     img.style.display =  img.style.display === "none" ? "block" : "none";   
 }
+function mostrarValorCombo(){
+    let combo = document.getElementById("meuCombo");
+    alert("Valor selecionado: " + combo.value);
+}
+
+function mostrarValorRadio(){
+    let radios = document.getElementsByName("tamanho");
+
+    for(let radio of radios){
+        if(radio.checked){
+            alert("Opção selecionada: " + radio.value);
+            break;
+        }
+    }
+}
+
+function mostrarInteresses(){
+    let interesses = document.getElementsByName("interesse")
+    let arr = []
+    let str = ", "
+    for (let interesse of interesses){
+        if(interesse.checked)
+            arr += interesse.value + str   
+    }
+    alert("Interesses selecionados:" + arr)
+   
+}
