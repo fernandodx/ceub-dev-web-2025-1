@@ -3,7 +3,10 @@
     <home-component-vue/>
   </div>
 </template>
-
+<div>
+  <h1>VUE</h1>
+  <br>
+</div>
 <script>
 import HomeComponentVue from './components/HomeComponent.vue'
 
