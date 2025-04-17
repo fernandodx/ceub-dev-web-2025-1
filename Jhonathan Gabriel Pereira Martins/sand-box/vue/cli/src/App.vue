@@ -4,19 +4,35 @@
     <br>
     <home-component/>
     <br>
-    <home-component/>
-    
+    <usuario-component/>
   </div>
 </template>
 
 <script>
 
 import HomeComponent from './components/HomeComponent.vue';
+import UsuarioComponent from './components/UsuarioComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HomeComponent
+    HomeComponent,
+    UsuarioComponent
+  },
+  created () {
+    console.log("created");
+  },
+  mounted () {
+    console.log("mounted");
+  },
+  updated() {
+    console.log ("updated");
+  },
+  errorCaptured() {
+    console.log("errorCaptured");
+  },
+  unmounted() {
+    console.log("unmounted");
   }
 }
 </script>
