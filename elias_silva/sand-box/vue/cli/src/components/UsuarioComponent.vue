@@ -2,7 +2,8 @@
     <div>
         <p>Nome: {{ nome }}</p>
         <p>E-mail: {{ email }}</p>
-        <h1 v-show="isBotaofogoCampeao">Botafogo Campeão </h1>
+        <h4
+        v-show="isBotaofogoCampeao">Botafogo Campeão </h4>
         <br>
         <button @click="verificarCampeao">É Campeão</button>
 
