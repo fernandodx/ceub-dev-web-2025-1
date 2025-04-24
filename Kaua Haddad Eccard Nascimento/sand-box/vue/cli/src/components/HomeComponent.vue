@@ -11,7 +11,7 @@
     name : "HomeComponent",
     data() {
         return {
-            nome : "Fernando"
+            nome : "Kaua"
         }
     }
   }
