@@ -5,6 +5,11 @@
     <home-component/>
     <br>
     <usuario-component/>
+    <br>
+    <ImagemComponent/>
+    <br>
+    <estilo-component/>
+
   </div>
 </template>
 
@@ -12,12 +17,17 @@
 
 import HomeComponent from './components/HomeComponent.vue';
 import UsuarioComponent from './components/UsuarioComponent.vue';
+import ImagemComponent from './components/ImagemComponent.vue';
+import EstiloComponent from './components/EstiloComponent.vue';
+
 
 export default {
   name: 'App',
   components: {
     HomeComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    ImagemComponent,
+    EstiloComponent
   },
   created () {
     console.log("created");
