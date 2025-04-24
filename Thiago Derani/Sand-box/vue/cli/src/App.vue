@@ -1,22 +1,46 @@
 <template>
   <div>
-    <home-component-vue/>
+    <br>
+    <home-component/>
+    <br>
+    <usuario-component/>
+    <br>
+    <imagem-component/>
+    <br>
+    <estilo-component/>
   </div>
+  
 </template>
-<div>
-  <h1>VUE</h1>
-  <br>
-</div>
+
 <script>
-import HomeComponentVue from './components/HomeComponent.vue'
-
-
+import HomeComponent from './components/HomeComponent.vue'
+import ImagemComponent from './components/ImagemComponent.vue';
+import UsuarioComponent from './components/UsuarioComponent.vue'
+import EstiloComponent from './components/EstiloComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HomeComponentVue
+    HomeComponent,
+    UsuarioComponent,
+    ImagemComponent,
+    EstiloComponent
     
+  },
+  created(){
+    console.log("created");
+  },
+  mounted(){
+    console.log("mounted");
+  },
+  uptaded(){
+    console.log("updated");
+  },
+  errorCaptured(){
+    console.log("errorCaptured");
+  },
+  unmounted(){
+    console.log("unmounted");
   }
 }
 </script>
