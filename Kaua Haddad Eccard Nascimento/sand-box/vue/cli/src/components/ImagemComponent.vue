@@ -1,11 +1,10 @@
 <template>
     <div class="container">
-        <img v-show="imagemVisivel" :src="pathImagem" :alt="banner">
-        <button @click="apareceEsconde(), segundometodo()">Aparece/Esconde</button>
+        <img v-show="imagemVisivel" :src="urImagem" :alt="banner">
+        <button @click="apareceEsconde(), segundometodo()">{{ nomeBotao }}</button>
 
     </div>
 </template>
-
 <script>
     export default {
         name: "ImagemComponent",
@@ -13,19 +12,26 @@
             return {
                 imagemVisivel : true,
                 banner: "valor do alt",
-                pathImagem : "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0804%2Fr579402_1296x729_16%2D9.jpg"
+               // pathImagem : "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0804%2Fr579402_1296x729_16%2D9.jpg"
             }
         },
         methods: {
             apareceEsconde() {
                 this.imagemVisivel = !this.imagemVisivel;
+                this.$emit('visibilidadeImg', this.imagemVisivel);
             },
             segundometodo() {
                 setTimeout(() => {
                     alert('Segundo Método Acionado');
                 }, 2000);
             }
-        }
+        },
+
+        props: {
+            urImagem : String,
+            nomeBotao : String 
+        },
+        emits: ["visibilidadeImg"]
     }
 </script>
 
@@ -70,3 +76,5 @@ button:hover {
 
 
 </style>
+
+

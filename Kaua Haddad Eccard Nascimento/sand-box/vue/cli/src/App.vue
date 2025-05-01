@@ -6,7 +6,14 @@
     <br>
     <usuario-component/>
     <br>
-    <imagem-component/>
+    <imagem-component 
+    @visibilidadeImg="alertaSaoPaulo"
+    nomeBotao="Aparece Independente" 
+    urImagem="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2019%2F0804%2Fr579402_1296x729_16%2D9.jpg"/>
+    <imagem-component 
+    @visibilidadeImg="alertaIndependente"
+    nomeBotao="Aparece Independente"
+     :urImagem="urlBanner"/>
     <br>
     <estilo-component/>
   </div>
@@ -25,6 +32,23 @@ export default {
     UsuarioComponent,
     ImagemComponent,
     EstiloComponent
+  },
+  data() {
+    return {
+      urlBanner : "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/09/11/1354128257-whatsapp-image-2023-09-04-at-051553-1.jpeg"
+    }
+  },
+  methods: {
+    alertaSaoPaulo(isVisivel){
+      if(isVisivel){
+      alert("Saopaulo visivel")
+      }
+    },
+    alertaIndependente(isVisivel) {
+      if(isVisivel){
+      alert("Saopaulo visivel");
+      }
+    }
   },
   created() {
     console.log("created");
