@@ -5,7 +5,15 @@
     <br>
     <usuario-component/>
     <br>
-    <imagem-component/>
+    <imagem-component  
+    @visibilidade-img="alertaFluminense"
+    nomeBotao="Aparece Fluminense" 
+    urlImagem=" https://jpimg.com.br/uploads/2023/04/conheca-a-historia-do-fluminense-no-brasileirao.jpg"/>
+   
+    <imagem-component  
+    @visibilidade-img="alertaYoungFlu"
+    nomeBotao="Aparece YoungFlu" 
+    :urlImagem="urlBanner"/>
     <br>
     <estilo-component/>
   </div>
@@ -27,6 +35,22 @@ export default {
     ImagemComponent,
     EstiloComponent
   },
+  data() {
+    return {
+      urlBanner : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS40mmM0Sj_ZAD1y0EbR4q_izNDHa8P-hPCnA&s"
+    }
+  },
+  methods: {
+    alertaFluminense(isVisivel){
+      if(isVisivel){
+        alert("Fluminense Visivel")
+      }
+    },
+    alertaYoungFlu(isVisivel){
+      if(isVisivel){
+        alert("YoungFlu Visivel")
+    }
+  },
   created(){
     console.log("mounted");
   },
@@ -40,7 +64,7 @@ export default {
     console.log("");
   }
 }
-
+}
 </script>
 
 <style>

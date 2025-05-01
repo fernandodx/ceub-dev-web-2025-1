@@ -1,13 +1,12 @@
 <template>
     <div class="container">
 
-        <img v-show="imagemVisivel" :src="pathImagem" 
+        <img v-show="imagemVisivel" :src="urlImagem" 
              :alt="banner">
 
-        <button @click="apareceEsconde(), segundoMetodo()">Aparece/Esconde</button>
+        <button @click="apareceEsconde(), segundoMetodo()">{{ nomeBotao }}</button>
     </div>
 </template>
-
 <script>
     export default{
         name: "ImagemComponent",
@@ -15,19 +14,25 @@
             return {
                 imagemVisivel : true,
                 banner: "valor do alt",
-                pathImagem : "https://jpimg.com.br/uploads/2023/04/conheca-a-historia-do-fluminense-no-brasileirao.jpg"
+                //pathImagem : "https://jpimg.com.br/uploads/2023/04/conheca-a-historia-do-fluminense-no-brasileirao.jpg"
             }
         },
         methods:{
             apareceEsconde(){
                 this.imagemVisivel = !this.imagemVisivel;
+                this.$emit('visibilidadeImg', this.imagemVisivel)
             },
             segundoMetodo(){
                 setTimeout(() => {
                     alert("Segundo Metodo Acionado");
                 }, 2000);
             }
-        }
+        },
+        props:{
+            urlImagem: String,
+            nomeBotao : String 
+        },
+        emits: ["visibilidadeImg"]
     }
 
 </script>  
