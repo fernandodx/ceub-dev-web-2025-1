@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="introducao.js"></script>
+    </head>
+    <body>
+        <h1>HOME</h1>
+        <hr>
+
+        <img id="minhaImagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRek2lNF6j0ZRPpv610WW5oX-VfB96i_n1Pe6et2JIRlQGWp4N8yhPg8Nbgph_fhuJIwPY&usqp=CAU"
+            width="400"
+            height="300">
+
+        <button onclick="toggleImagem()">Mostrar/Ocultar</button>
+
+        <hr>
+
+        <select id="meuCombo" onblur="mostrarValorCombo()">
+            <option value="oi1">Opção 1</option>
+            <option value="oi2">Opção 2</option>
+            <option value="oi3">Opção 3</option>
+        </select>
+        <button onclick="mostrarValorCombo()">Exibir valor da Combo</button>
+
+        <hr>
+
+        <input type="radio" name="tamanho" value="pequeno">Pequeno
+        <input type="radio" name="tamanho" value="medio">Médio
+        <input type="radio" name="tamanho" value="grande">Grande
+
+        <button ondblclick="mostrarValorRadio()">Mostrar Radio selecionado</button>
+
+        <hr>
+
+        <h3>Interesse:</h3>
+        <input type="checkbox" name="interesse" value="musica">Música
+        <input type="checkbox" name="interesse" value="esporte">Esporte
+        <input type="checkbox" name="interesse" value="videogame">Video Game
+
+        <button onclick="mostrarValorCheckbox()">Mostrar Checkbox Selecionados</button>
+
+
+    </body>
+</html>
