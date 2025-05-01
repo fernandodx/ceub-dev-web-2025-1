@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <img v-show="imagemVisivel" :src="pathImagem" :alt="Banner">
-        <button @click="apareceEsconde(), segundoMetodo()">Aparece/Esconde</button>
+        <img v-show="imagemVisivel" :src="urlImagem" :alt="Banner">
+        <button @click="apareceEsconde(), segundoMetodo()">{{ nomeBotao }}</button>
 
     </div>
 </template>
@@ -13,7 +13,7 @@ export default {
         return {
             imagemVisivel: true,
             Banner: "valor do alt",
-            pathImagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFkDyJMD36AwixNVk7wrCYi-yNB-ursLfcEw&s"
+            // pathImagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFkDyJMD36AwixNVk7wrCYi-yNB-ursLfcEw&s"
         }
     },
     methods:{
@@ -22,9 +22,13 @@ export default {
         },
         segundoMetodo(){
             setTimeout(() => {
-                alert('Sefundo Metodo Acionado!')
+                alert('Segundo Metodo Acionado!')
             },2000);
         }
+    },
+    props:{
+        urlImagem : String,
+        nomeBotao : String
     }
 }
 </script>
