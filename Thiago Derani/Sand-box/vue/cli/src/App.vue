@@ -5,7 +5,8 @@
     <br>
     <usuario-component/>
     <br>
-    <imagem-component/>
+    <imagem-component @visibilidadeImg="alertaRonaldo" nomeBotao="Aparece Ronaldo" urlImagem="https://campeonatobrasileiro.com.br/storage/cache/storage/conteudos/conteudos/20241124223308_brasileiros-na-champions-league-quem-sao-os-destaques-1-933x622.jpg"/>
+    <imagem-component @visibilidadeImg="alertaGaucho" nomeBotao="Aparece Gaucho" :urlImagem="urlBanner"/>
     <br>
     <estilo-component/>
   </div>
@@ -27,16 +28,34 @@ export default {
     EstiloComponent
     
   },
-  created(){
+  data(){
+    return{
+      urlBanner: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngplay.com%2Fimage%2F499257&psig=AOvVaw0tnixPdRSAUvX8SaqHLynK&ust=1746143135211000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiz6J34gI0DFQAAAAAdAAAAABAJ"
+    }
+
+  },
+  methods: {
+    alertaRonaldo(isVisivel){
+      if(isVisivel){
+        alert("Ronaldo visivel");
+      }
+    },
+    alertaGaucho(isVisivel) {
+      if(isVisivel){
+        alert("Gaucho visivel");
+      }
+    }
+  },
+  created() {
     console.log("created");
   },
-  mounted(){
+  mounted() {
     console.log("mounted");
   },
-  uptaded(){
+  updated(){
     console.log("updated");
   },
-  errorCaptured(){
+  errorCaptured() {
     console.log("errorCaptured");
   },
   unmounted(){
@@ -50,7 +69,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: start;
   color: #2c3e50;
   margin-top: 60px;
 }

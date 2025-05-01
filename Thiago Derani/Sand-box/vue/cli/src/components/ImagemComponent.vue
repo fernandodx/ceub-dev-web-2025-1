@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img v-show="imagemVisível" :src="pathImagem" :alt="Banner">
+        <img v-show="imagemVisível" :src="urlImagem" :alt="Banner">
         <button @click="apareceEsconde(),segundometodo()">Aparece/Esconde</button>
                 
     </div>
@@ -14,7 +14,7 @@
             return{
                 imagemVisível : true,
                 Banner: "Valor do alt",
-                pathImagem : "https://campeonatobrasileiro.com.br/storage/cache/storage/conteudos/conteudos/20241124223308_brasileiros-na-champions-league-quem-sao-os-destaques-1-933x622.jpg"
+                // pathImagem : "https://campeonatobrasileiro.com.br/storage/cache/storage/conteudos/conteudos/20241124223308_brasileiros-na-champions-league-quem-sao-os-destaques-1-933x622.jpg"
 
             }
         },
@@ -29,6 +29,9 @@
                     
                 }, 2000);
             }
+        },
+        props: {
+            urlImagem : String
         }
     }
 
