@@ -158,3 +158,37 @@ function toggleImagem() {
   let img = document.getElementById("minhaImagem");
   img.style.display = img.style.display === "none" ? "block" :"none"
 }
+
+function mostrarValorcombo() {
+  let combo = document.getElementById("meuCombo");
+  alert("Valor Selecionado: + combo.value");
+}
+
+function mostrarValorRadio() {
+  let radios = document.getElementsByName("tamanho");
+  
+  for (let radio of radios) {
+    if(radio.checked) {
+      alert("Opcao selecionada: " + radio.value);
+      break;
+    }
+  }
+}
+
+// Função para mostrar os interesses selecionados
+function mostrarInteresses() {
+  let checkboxes = document.getElementsByName("interesse");
+  let selecionados = [];
+
+  for (let checkbox of checkboxes) {
+    if (checkbox.checked) {
+      selecionados.push(checkbox.value);
+    }
+  }
+
+  if (selecionados.length > 0) {
+    alert("Interesses selecionados: " + selecionados.join(", "));
+  } else {
+    alert("Nenhum interesse selecionado.");
+  }
+}
