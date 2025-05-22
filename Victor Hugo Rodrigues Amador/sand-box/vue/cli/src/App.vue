@@ -5,16 +5,24 @@
     <home-component-vue/>
     <br>
     <home-component-vue/>
+    <br>
+    <imagem-component/>
+    <br>
+    <estilo-component/>
   </div>
 </template>
 
 <script>
 import HomeComponentVue from './components/HomeComponent.vue'
-
+import EstiloComponent from './EstiloComponent.vue';
+import EstiloComponent from './EstiloComponent.vue';
+import ImagemComponent from './ImagemComponent.vue';
 export default {
   name: 'App',
   components: {
-    HomeComponentVue
+    HomeComponentVue,
+    ImagemComponent,
+    EstiloComponent,
   }
 }
 </script>
