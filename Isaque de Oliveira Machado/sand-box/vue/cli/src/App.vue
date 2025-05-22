@@ -10,11 +10,13 @@
 
 <script>
 import HomeComponentVue from './components/HomeComponent.vue'
+import ImagemComponentVue from './components/ImagemComponent.vue';     
 
 export default {
   name: 'App',
   components: {
-    HomeComponentVue
+    HomeComponentVue,
+    ImagemComponentVue
   }
 }
 </script>
