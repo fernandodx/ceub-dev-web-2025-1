@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <img v-show="imagemVisível" :src="urlImagem" :alt="Banner">
-        <button @click="apareceEsconde(),segundometodo()">Aparece/Esconde</button>
+        <button @click="apareceEsconde(),segundometodo()">{{nomeBotao}}</button>
                 
     </div>
 
@@ -21,6 +21,7 @@
         methods:{
             apareceEsconde(){
                 this.imagemVisível = !this.imagemVisível;
+                this.$emit('visibilidadeImg', this.imagemVisível);
 
             },
             segundometodo(){
@@ -31,8 +32,10 @@
             }
         },
         props: {
-            urlImagem : String
-        }
+            urlImagem : String,
+            nomeBotao : String
+        },
+        emits: ["visibilidadeImg"]
     }
 
 </script>
