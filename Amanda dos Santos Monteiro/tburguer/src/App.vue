@@ -1,10 +1,23 @@
 <template>
+  <nav-bar-component></nav-bar-component>
+  <banner-component></banner-component>
   <router-view />
+  <footer-component></footer-component>
 </template>
 
 <script>
+
+  import NavBarComponent from './components/NavBarComponent.vue';
+  import FooterComponent from './components/FooterComponent.vue';
+  import BannerComponent from './components/BannerComponent.vue';
+
   export default{
     name: "App",
+    components: {
+      NavBarComponent,
+      FooterComponent,
+      BannerComponent
+    }
   }
 </script> 
 

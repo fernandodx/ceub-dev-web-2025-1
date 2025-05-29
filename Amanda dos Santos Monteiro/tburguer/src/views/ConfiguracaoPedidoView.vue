@@ -1,7 +1,8 @@
 <template>
     <div>
-
+        <h1>Configuração</h1>
     </div>
+
 </template>
 
 <script>
@@ -11,6 +12,4 @@
 
 </script>
 
-<style scoped>
-
-</style>              
+<style scoped></style>              

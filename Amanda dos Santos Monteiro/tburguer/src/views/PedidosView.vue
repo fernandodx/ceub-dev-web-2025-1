@@ -1,16 +1,15 @@
 <template>
     <div>
-
+        <h1>Pedidos</h1>
     </div>
+
 </template>
 
 <script>
-    export default{
+    export default {
         name: "PedidosView"
     }
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
