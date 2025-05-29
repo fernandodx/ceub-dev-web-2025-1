@@ -1,16 +1,25 @@
 <template>
+  <nav-bar-component/>
+  <banner-component/>
   <router-view />
+  <footer-component/>
 </template>
 
-<script> 
+<script>
+import FooterComponent from './components/FooterComponent.vue';
+import NavBarComponent from './components/NavBarComponent.vue';
+import BannerComponent from './components/BannerComponent.vue';
 
-export default {
-
-  name:"App",
-}
-
-
+  export default {
+    name: "App",
+    components:{
+      NavBarComponent,
+      FooterComponent,
+      BannerComponent
+    }
+  }
 </script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
