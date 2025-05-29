@@ -3,6 +3,7 @@ import MenuView from "@/views/MenuView.vue";
 import PedidosView from "@/views/PedidosView.vue";
 
 
+
 const routes = [
   {
     path: "/",
