@@ -8,7 +8,7 @@
 </template>
 <script>
    export default{
-    name: "Footer Componet"
+    name: "Footer Component"
    }
 
 </script>
