@@ -18,7 +18,7 @@
     background-image: url("/public/img/banner.jpeg");
     background-position: 0;
     background-size: cover;
-    height: 500px;
+    height: 500px; 
     display: flex;
     align-items: center;
     justify-content: flex-end;

@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer id="footer">
-            <p>Construído por Gabriel Alencar © 2025</p>
+            <p>Construído por André Sousa © 2025</p>
         </footer>
     </div>
 
