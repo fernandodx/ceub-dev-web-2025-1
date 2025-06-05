@@ -2,15 +2,154 @@
     <div>
         <h1>
             Menu
+            <div id="scroll-horizontal">
+                <div id="card-content">
+                    <div id="card-linha">
+                        <div class="foto-hamburguer">
+                            <img src="https://s2-casavogue.glbimg.com/GRF9KCq-1hiz5uSs-xX9Go_KqIc=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2022/p/X/eb4KQdToys327cGqnRGg/receita-ceboloni-bacon.jpg"
+                                alt="Imagem do Hambúrguer">
+                            <div class="card-coluna">
+                                <p id="nome-content">Hamburguer</p>
+                                <p id="preco-content">R$ 45,99</p>
+                                <p id="descricao-content">Descrição</p>
+                                <button>Selecionar</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </h1>
     </div>
 </template>
 
 <script>
-    export default {
-        name : "MenuView"
+export default {
+    name: "MenuView",
+    data(){
+        return{
+            listaMenuHamburgues:[
+            ]
+        };
+    },
+    methods: {
+        async consultarMenu(){
+            const response = await fetch("http://localhost:3000/menu");
+            const dados = await response.json();
+            this.listaMenuHamburgues = dados.burgues;
+            console.log(this.listaMenuHamburgues);
+        }
+    },
+    mounted(){
+        this.consultarMenu
     }
+}
 </script>
 
 <style scoped>
+#card-content {
+    display: inline-block;
+    width: 280px;
+    min-height: 500px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #444;
+    position: relative;
+
+}
+
+#scroll-horizontal {
+    flex: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: inset -10px 0px 15px -20px grey;
+}
+
+.foto-hamburguer {
+    flex-shrink: 0;
+
+}
+
+.foto-hamburguer img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0;
+
+}
+
+#nome-content {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: black;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#preco-content {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+
+#descricao-content {
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    color: gray;
+    margin: 16px;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.card-coluna button {
+    margin-top: auto;
+    padding: 10px;
+    background-color: rgb(149, 211, 90);
+    color: darkslategray;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.card-coluna button:hover {
+
+    background-color: transparent;
+    color: darkslategray;
+    border: solid 1px rgb(149, 211, 90);
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+.card-linha{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+.card-coluna{
+    flex-grow: 1;
+    padding: 15px;
+    height: 100%;
+}
 </style>
