@@ -17,7 +17,7 @@
 
     #main-banner {
 
-        background-image: url("/public/banner.jpeg");
+        background-image: url("banner.jpeg");
         background-position: 0;
         background-size: cover;
         height: 500px;

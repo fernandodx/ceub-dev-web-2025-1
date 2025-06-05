@@ -1,56 +1,61 @@
 <template>
     <div>
-        <nav id = "nav">
-            <router-link to="/">
-
-
-                <img src ="/logo_tburguer.png" id="logo"/>
-            </router-link>
-            <router-link to="/menu">Menu</router-link>
-            <router-link to="/pedidos">Pedidos</router-link>
-        </nav>
+      <nav id="nav">
+        <div id="nav-left">
+          <img src="logo_tburguer.png" id="logo">
+        </div>
+        <div id="nav-right">
+          <router-link to="/menu">Menu</router-link>
+          <router-link to="/pedidos">Pedidos</router-link>
+        </div>
+      </nav>
     </div>
-    
-</template>
+  </template>
+  
 
 <script>
-    export default{
-        name:"NavBarComponent"
+    export default {
+        name: "NavBarComponent"
     }
 </script>
 
 <style scoped>
 
-    #nav {
-        background-color: rgb(16, 47, 51);
-        border-color: 3px solid darkgoldenrod;
-        padding: 15px 50px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+#nav {
+  background-color: #333;
+  border-bottom: 3px solid darkgoldenrod;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between; /* separa esquerda e direita */
+  align-items: center;
+}
 
-    #nav a {
-        color: darkgoldenrod;
-        text-decoration: none;
-        margin: 12px;
-        transition: .5s;
-    }
-    #nav a:hover {
-        color: white;
-        font-size: 20px;
+#nav-left {
+  display: flex;
+  align-items: center;
+}
 
-    }
+#nav-right {
+  display: flex;
+  align-items: center;
+}
 
-    #logo{
-        width: 100px;
-        height: 100px;
-    }
+#nav a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  margin: 12px;
+  transition: 0.5s;
+}
 
-    #nav #logo{
+#nav a:hover {
+  color: antiquewhite;
+  font-size: 20px;
+}
 
-        margin: auto;
-        margin-left: 0;
-    }
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
 
 </style>
