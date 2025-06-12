@@ -1,11 +1,12 @@
 <template>
     <div>
-        <h1>Pedidos</h1>
+        <h1>Pedido</h1>
     </div>
     
     </template>
     
-    <script>    
+    <script>   
+
         export default {
             name : "PedidosView"
         }
