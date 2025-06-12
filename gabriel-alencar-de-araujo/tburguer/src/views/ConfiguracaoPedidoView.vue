@@ -1,14 +1,31 @@
 <template>
     <div>
         <h1>
-            Pedidos
+            Configurar pedido
         </h1>
+        <pedido-component/>
     </div>
 </template>
 
 <script>
+    import PedidoCompontent from '@/components/PedidoCompontent.vue';
     export default {
-        name : "ConfiguracaoPedidoView"
+        name : "ConfiguracaoPedidoView",
+        components: {
+            PedidoCompontent
+        },
+        data(){
+            return{
+                hamburguerSelecionado: null
+            }
+        },
+        mounted(){
+            const query = this.$route.query;
+            if (query.burguer){
+            const decodeBurguer = JSON.parse(decodeURIComponent(query.burguer))
+            this.hamburguerSelecionado = decodeBurguer
+            }
+        }
     }
 </script>
 

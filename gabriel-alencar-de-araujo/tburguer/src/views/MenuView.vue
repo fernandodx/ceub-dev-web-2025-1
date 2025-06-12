@@ -3,15 +3,15 @@
         <h1>
             Menu
             <div id="scroll-horizontal">
-                <div id="card-content">
+                <div id="card-content" v-for="burguer in  listaMenuHamburgues" :key="burguer.id">
                     <div id="card-linha">
                         <div class="foto-hamburguer">
-                            <img src="https://s2-casavogue.glbimg.com/GRF9KCq-1hiz5uSs-xX9Go_KqIc=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2022/p/X/eb4KQdToys327cGqnRGg/receita-ceboloni-bacon.jpg"
-                                alt="Imagem do Hambúrguer">
+                            <img :src="burguer.foto"
+                                alt="burguer.nome">
                             <div class="card-coluna">
-                                <p id="nome-content">Hamburguer</p>
-                                <p id="preco-content">R$ 45,99</p>
-                                <p id="descricao-content">Descrição</p>
+                                <p id="nome-content"> {{ burguer.nome }}</p>
+                                <p id="preco-content"> R$ {{ burguer.valor }},00</p>
+                                <p id="descricao-content">{{ burguer.descricao }}</p>
                                 <button>Selecionar</button>
                             </div>
 
@@ -29,8 +29,7 @@ export default {
     name: "MenuView",
     data(){
         return{
-            listaMenuHamburgues:[
-            ]
+            listaMenuHamburgues:[]
         };
     },
     methods: {
@@ -39,10 +38,13 @@ export default {
             const dados = await response.json();
             this.listaMenuHamburgues = dados.burgues;
             console.log(this.listaMenuHamburgues);
+        },
+        selecionarBurguer(burguerSelecionado){
+            const param = JSON.stringify()
         }
     },
     mounted(){
-        this.consultarMenu
+        this.consultarMenu();
     }
 }
 </script>
