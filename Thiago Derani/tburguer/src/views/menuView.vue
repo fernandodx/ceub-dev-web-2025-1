@@ -3,15 +3,16 @@
     <div>
         <h1>Menu</h1>
         <div id="scroll-horizontal">
-            <div id="card-content">
+            <div id="card-content" v-for="burguer in listaMenuHamburgues" :key="burguer.id">
                 <div id="card-linha">
                     <div class="foto-hambuguer">
-                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg" alt="imagem do hambuguer da nossa loja">
+                        <img :src="burguer.foto" :alt="burguer.nome">
+                        <img src="https://img.freepik.com/fotos-premium/delicioso-hamburguer-fresco-isolado-no-fundo-branco_93675-104922.jpg" alt="imagem do hambuguer da nossa loja">
                         <div class="card-coluna">
-                            <p id="nome-content">X-brocadão</p>
-                            <p id="preco-content">R$ 45,99</p>
-                            <p id="descricao-content">Descrição</p>
-                            <button>Selecionar</button>
+                            <p id="nome-content">{{ burguer.nome }}</p>
+                            <p id="preco-content">R$ {{ burguer.valor }},00</p>
+                            <p id="descricao-content">{{ burguer.descricao }}</p>
+                            <button>selecionar</button>
                         </div>
                     </div>
                 </div>
@@ -24,21 +25,29 @@
     export default{
         name:"MenuView",
         data() {
-            return{
+            return {
                 listaMenuHamburgues:[]
-
             };
         },
-        methods:{
+        methods: {
             async consultarMenu(){
                 const response = await fetch("http://localhost:3000/menu");
                 const dados = await response.json();
                 this.listaMenuHamburgues = dados.burgues;
+                console.log(this.listaMenuHamburgues);
+            },
+            selecionarBurguer(burguerSelecionado) {
+                const param = JSON.stringify(burguerSelecionado);
+                const burguerJson = encodeURIComponent(param);
+                // pegar o router e dar um push na nova tela.
+                this.$router.push({path: '/config-pedido, query:{burguer: burguerJson}'});
+
             }
-
-        }
+        },
+    mounted() {
+        this.consultarMenu();
     }
-
+}
 </script>
 
 <style scoped>
@@ -92,51 +101,49 @@
         font-size: 16px;
         text-align: left;
         color: gray;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin: 16px;
         white-space: pre-line;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 6;
+        /*-webkit-line-clamp: 6; numero de linha para cortar */
         -webkit-box-orient: vertical;
-      
      }
 
-     .card-coluna p{
+     .card-coluna p {
         margin: 0;
-
      }
-     .card-coluna button{
+
+     .card-coluna button {
         margin-top: auto;
         padding: 10px;
-        background-color: rgb(88, 155, 88);
-        color: darkslategrey;
+        background-color: rgb(171, 194, 125);
+        color: darkblue;
         font-weight: bold;
         border-radius: 5px;
         border: none;
-        font-size: 14px;
+        font-size:14px;
         width: 100%;
-        transition: 0.5s;
+        transition: 0.5;
         cursor: pointer;
-
      }
-     .card-coluna button:hover{
-        
+     
+     .card-coluna:hover {
         background-color: transparent;
-        color: darkslategrey;
-        border: solid 1px rgb(149, 211, 90);
-        font-size: 14px;
-    }
-
-    .card-linha{
+        color: darkblue;
+        border: solid 1px rgb(171, 194, 125);
+        border-radius: 5px;
+        font-size:14px;
+        
+     }
+     .card-linha{
         display: flex;
         flex-direction: row;
         height: 100%;
-    }
-    .card-coluna{
+     }
+     .card-coluna{
         flex-grow: 1;
         padding: 15px;
         height: 100%;
-    }
+     }
 </style>

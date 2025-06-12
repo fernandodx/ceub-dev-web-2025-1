@@ -1,8 +1,10 @@
 <template>
-  <div><nav-bar-component/>
+  <dir>
+    <nav-bar-component/>
   <banner-component/>
   <router-view />
-  <footer-component/></div>
+  <footer-component/>
+</dir>
 </template>
 
 
