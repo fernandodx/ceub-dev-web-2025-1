@@ -18,6 +18,7 @@ const routes = [
     name: "pedidos",
     component: PedidosView,
   },
+  
 ];
 
 const router = createRouter({
