@@ -2,15 +2,15 @@
     <div>
         <h1>Menu</h1>
         <div id="scroll-horizontal">
-            <div id="card-content">
+            <div id="card-content" v-for="burguer in listaMenuHamburgues" :key="burguer.id">
                 <div id="card-linha">
                     <div class="foto-hamburguer">
-                        <img src="https://s2.glbimg.com/IaEnP49buSdSUDftlMxVrq3-ZDo=/940x523/e.glbimg.com/og/ed/f/original/2019/04/26/loucosporti1.jpg" 
-                        alt="Imagem do hamburguer">
+                        <img :src="burguer.foto" :alt="burguer.nome"> 
+                         :alt="burguer.nome">
                         <div class="card-coluna">
-                            <p id="nome-content">Completão</p>
-                            <p id="preco-content">R$45,99</p>
-                            <p id="descricao-content">Descrição</p>
+                            <p id="nome-content">{{ burguer.nome }}</p>
+                            <p id="preco-content">R$ {{ burguer.valor}},00</p>
+                            <p id="descricao-content">{{ burguer.descricao }}</p>
                             <button>Selecionar</button>
                         </div>
                     </div>
@@ -34,10 +34,16 @@
                 const dados = await response.json();
                 this.listaMenuHamburgues = dados.burgues;
                 console.log(this.listaMenuHamburgues)
-            },  
+            }, 
+            selecionarBurguer(burguerSelecionado){
+                const param = JSON.stringify(burguerSelecionado);
+                const burguerJson = encodeURIComponent(param);
+                //Pegar o router e dar um push na nova tela. 
+                this.$router.push({path: '/config-pedido', query: {burguer : burguerJson}});
+            } 
         },
         mounted() {
-            this.consultarMenu
+            this.consultarMenu();
         }
     }
 </script>
