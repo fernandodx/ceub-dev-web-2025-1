@@ -11,8 +11,8 @@
 
   import NavBarComponent from './components/NavBarComponent.vue';
   import FooterComponent from './components/FooterComponent.vue';
-import BannerComponent from './components/BannerComponent.vue';
-
+  import BannerComponent from './components/BannerComponent.vue';
+  
   export default{
     name: "App",
     components: {
