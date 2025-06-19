@@ -2,7 +2,7 @@
 
     <div class="container">
         <h1>Morpho Automações</h1>
-        <img v-show="imagemVisivel" v-bind:src="pathImagem" 
+        <img v-show="imagemVisivel" v-bind:src="UrlImagem" 
         v-bind:alt="valorAlt" width="200">
         <button @click="apareceEsconde(), segundoMetodo()">Aparece/Esconde</button>
     </div>
@@ -14,7 +14,7 @@ export default {
     data() {
         return {
             imagemVisivel : true,
-            pathImagem : "https://morphoautomacoes.com.br/icons/logo-morpho-automacao-contabil.png",
+          //  pathImagem : "https://morphoautomacoes.com.br/icons/logo-morpho-automacao-contabil.png",
             valorAlt: "Logo Morpho"
         }
     },
@@ -27,6 +27,9 @@ export default {
                 alert('Segundo Metodo Acionado')
             }, 2000)
         }
+    },
+    props: {
+        UrlImagem : String
     }
 }
 </script>

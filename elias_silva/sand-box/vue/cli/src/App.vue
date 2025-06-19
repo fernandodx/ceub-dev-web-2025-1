@@ -7,7 +7,9 @@
     <br>
     <usuario-component/>
     <br>
-    <imagem-component/>
+    <imagem-component UrlImagem="https://morphoautomacoes.com.br/icons/logo-morpho-automacao-contabil.png"/>
+    <br>
+    <imagem-component :UrlImagem="urlBanner"/>
     <br>
     <estilo-component/>
   </div>
@@ -27,6 +29,11 @@ export default {
     UsuarioComponent,
     ImagemComponent,
     EstiloComponent
+  },
+  data() {
+    return {
+      urlBanner : "https://morphoautomacoes.com.br/images/banner-morpho-automacao-contabil.png"
+    }
   },
   created() {
     console.log("Created")
