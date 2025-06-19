@@ -99,7 +99,7 @@
                     nome : this.nomeCliente,
                     ponto : this.pontoCarneSelecionado,
                     bebida : Array.from(this.listaBebidasSelecionadas),
-                    complemento : Array.from(this.listaComplementosSelecionadoscomplemento),
+                    complemento : Array.from(this.listaComplementosSelecionados),
                     statusId: 5,
                     hamburguer: this.burguer
                 }
