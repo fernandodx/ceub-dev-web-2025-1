@@ -12,7 +12,7 @@
                                 <p id="nome-content"> {{ burguer.nome }}</p>
                                 <p id="preco-content"> R$ {{ burguer.valor }},00</p>
                                 <p id="descricao-content">{{ burguer.descricao }}</p>
-                                <button>Selecionar</button>
+                                <button @click="selecionarBurguer(burguer)">Selecionar</button>
                             </div>
 
 
@@ -40,7 +40,9 @@ export default {
             console.log(this.listaMenuHamburgues);
         },
         selecionarBurguer(burguerSelecionado){
-            const param = JSON.stringify()
+            const param = JSON.stringify(burguerSelecionado)
+            const burguerJson = encodeURIComponent(param)
+            this.$router.push({path: 'config-pedido', query: {burguer : burguerJson}})
         }
     },
     mounted(){

@@ -3,7 +3,7 @@
         <h1>
             Configurar pedido
         </h1>
-        <pedido-component/>
+        <pedido-compontent :burguer="this.hamburguerSelecionado" />
     </div>
 </template>
 
