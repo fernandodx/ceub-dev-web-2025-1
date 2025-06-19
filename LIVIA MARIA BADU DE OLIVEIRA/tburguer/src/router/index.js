@@ -6,18 +6,18 @@ import ConfiguracaoPedidoView from "@/views/ConfiguracaoPedidoView.vue";
 const routes = [
   {
     path: "/",
-    name: "menu",
+    name: "home",
     component: MenuView,
   },
   {
     path: "/menu",
    name: "menu",
-   component:MenuView,
+   component: MenuView,
   },
   {
        path: "/pedidos",
       name: "pedidos",
-      component:PedidosView,
+      component: PedidosView,
   },
    
 ];
