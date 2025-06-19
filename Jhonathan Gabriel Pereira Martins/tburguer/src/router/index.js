@@ -18,6 +18,11 @@ const routes = [
     path: "/pedidos",
     name: "PedidosView",
     component: PedidosView,
+  },
+  {
+    path: "/config-pedido",
+    name: "config-pedido",
+    component: ConfiguracaoPedidoView,
   }
 ];
 

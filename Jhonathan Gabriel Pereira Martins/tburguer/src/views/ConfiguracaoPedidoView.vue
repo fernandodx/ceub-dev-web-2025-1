@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Configuração</h1>
-        <pedido-component/>
+        <pedido-component :burguer="this.hamburguerSelecionado"/>
     </div>
     
     </template>
@@ -12,7 +12,7 @@
             name : "ConfiguracaoPedidoView",
             components : {
                 PedidoComponent
-            },
+            }, 
             data() {
                 return {
                     hamburguerSelecionado : null

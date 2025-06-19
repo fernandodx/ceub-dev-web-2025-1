@@ -10,7 +10,7 @@
                         <p id="nome-content">{{ burguer.nome }}</p>
                         <p id="preco-content">{{ burguer.valor}},00</p>
                         <p id="descricao-content">{{ burguer.descricao}}</p>
-                        <button>selecionar</button>
+                        <button @click="selecionarBurguer(burguer)">selecionar</button>
                     </div>
                 </div>
             </div>
