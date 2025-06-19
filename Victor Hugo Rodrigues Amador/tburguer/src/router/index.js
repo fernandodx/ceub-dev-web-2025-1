@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MenuView from "@/views/MenuView.vue";
 import PedidosView from "@/views/PedidosView.vue";
+import configuracaoPedidoView from "@/views/ConfiguracaoPedidoView.vue";
 
 const routes = [
   {
@@ -9,7 +10,7 @@ const routes = [
     component: MenuView,
   },
   {
-    path: "/",
+    path: "/menu",
     name: "menu",
     component: MenuView,
   },
@@ -18,7 +19,13 @@ const routes = [
     name: "pedidos",
     component: PedidosView,
   },
-];
+  { 
+    path: "/config-pedido",
+    name: "config-pedido",
+    component: configuracaoPedidoView
+  },
+]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
