@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Configuração</h1>
-        <pedido-component/>
+        <pedido-component :burguer="this.hamburguerSelecionado"/>
     </div>
 
 </template>
@@ -13,14 +13,14 @@
         components : {
             PedidoComponent
         },
-        data(){
+        data() {
             return {
                 hamburguerSelecionado : null
             }
         },
-        mounted(){
+        mounted() {
             const query = this.$route.query;
-            if (query.burguer){
+            if (query.burguer) {
                 const decodeBurguer = JSON.parse(decodeURIComponent(query.burguer));
                 this.hamburguerSelecionado = decodeBurguer;
             }

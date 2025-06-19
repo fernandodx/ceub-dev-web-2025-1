@@ -11,7 +11,7 @@
                             <p id="nome-content">{{ burguer.nome }}</p>
                             <p id="preco-content">{{ burguer.valor }},00</p>
                             <p id="descricao-content">{{ burguer.descricao }}</p>
-                            <button>Selecionar</button>
+                            <button @click="selecionarBurguer(burguer)">Selecionar</button>
                         </div>
                     </div>
                 </div>
@@ -24,13 +24,13 @@
 <script>
     export default {
         name: "MenuView",
-        data(){
+        data() {
             return {
                 listaMenuHamburgues: []
             };
         },
         methods: {
-            async consultarMenu() {
+            async consultarMenu( ) {
                 const response = await fetch("http://localhost:3000/menu");
                 const dados = await response.json();
                 this.listaMenuHamburgues = dados.burgues;
@@ -40,7 +40,7 @@
                 const param = JSON.stringify(burguerSelecionado);
                 const burguerJson = encodeURIComponent(param);
                 //Pegar o router e dar um push na nova tela.
-                this.Srouter.push({path: '/config-pedido', query : {burguer : burguerJson}});
+                this.$router.push({path: '/config-pedido', query : {burguer : burguerJson}});
             }
         },
         mounted(){

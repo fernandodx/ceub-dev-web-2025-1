@@ -76,6 +76,25 @@
         "eh_novidade": true
       },
       "id": 2
+    },
+    {
+      "nome": "gdgzagaz",
+      "ponto": {
+        "id": 1,
+        "descricao": "Ao ponto"
+      },
+      "bebidas": [],
+      "complemento": [],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 5,
+        "nome": "Braseirão",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1701549228656b94ac481d3_75_75.jpeg",
+        "descricao": "Delicioso hambúrguer no pão de brioche selado na brasa, com manteiga de leite, maionese especial com toque de alho e ervas, dois suculentos blend's de 160 gramas e queijo mussarela derretido na brasa.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      "id": 3
     }
   ],
   "opcionais": {
@@ -200,8 +219,6 @@
         "valor": 15,
         "eh_novidade": true
       }
-      
-      
     ]
   }
 }
