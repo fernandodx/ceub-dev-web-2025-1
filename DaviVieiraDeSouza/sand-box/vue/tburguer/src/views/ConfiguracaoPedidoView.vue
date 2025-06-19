@@ -1,13 +1,12 @@
 <template>
     <div>
         <h1>Configuração</h1>
-        <pedido-component/>
+        <pedido-component :burguer="this.hamburguerSelecionado"/>
     </div>
 </template>
 
 <script>
     import PedidoComponent from '@/components/PedidoComponent.vue';
-import PedidoComponent from '../components/PedidoComponent.vue';
     export default{
         name: "ConfiguracaoPedidoView",
         components:{
