@@ -1,0 +1,71 @@
+{
+  "tamanhos_pizza": [
+    { "id": 1, "descricao": "Pequena (4 fatias)" },
+    { "id": 2, "descricao": "Média (6 fatias)" },
+    { "id": 3, "descricao": "Grande (8 fatias)" }
+  ],
+  "status_pedido": [
+    { "id": 1, "descricao": "Pedido em espera" },
+    { "id": 2, "descricao": "Em produção" },
+    { "id": 3, "descricao": "A caminho" },
+    { "id": 4, "descricao": "Entregue" },
+    { "id": 5, "descricao": "Pedido pendente" },
+    { "id": 6, "descricao": "Pedido realizado" }
+  ],
+  "pedidos": [
+    {
+      "nome": "Fernando",
+      "tamanho": { "id": 2, "descricao": "Média (6 fatias)" },
+      "bebidas": [
+        { "id": 1, "nome": "Coca Cola Lata 310 ml", "descricao": "", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/7e2e2e2e-7e2e-4e2e-8e2e-7e2e2e2e2e2e/202201251234_1b1b1b1b-1b1b-4b1b-8b1b-1b1b1b1b1b1b.png", "valor": 6, "eh_novidade": false }
+      ],
+      "adicionais": [
+        { "id": 1, "nome": "Borda recheada de catupiry", "descricao": "Borda extra de catupiry", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_catupiry.png", "valor": 8, "eh_novidade": true }
+      ],
+      "statusId": 6,
+      "pizza": {
+        "id": 1,
+        "nome": "Calabresa",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_calabresa.png",
+        "descricao": "Pizza de calabresa com cebola, queijo e molho de tomate.",
+        "valor": 40,
+        "eh_novidade": true
+      },
+      "id": 2
+    },
+    {
+      "nome": "Maria",
+      "tamanho": { "id": 3, "descricao": "Grande (8 fatias)" },
+      "bebidas": [],
+      "adicionais": [],
+      "statusId": 5,
+      "pizza": {
+        "id": 2,
+        "nome": "Mussarela",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_mussarela.png",
+        "descricao": "Pizza de mussarela com molho de tomate e orégano.",
+        "valor": 38,
+        "eh_novidade": true
+      },
+      "id": 3
+    }
+  ],
+  "opcionais": {
+    "adicionais": [
+      { "id": 1, "nome": "Borda recheada de catupiry", "descricao": "Borda extra de catupiry", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_catupiry.png", "valor": 8, "eh_novidade": true },
+      { "id": 2, "nome": "Borda de cheddar", "descricao": "Borda extra de cheddar", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_cheddar.png", "valor": 8, "eh_novidade": false },
+      { "id": 3, "nome": "Azeitona extra", "descricao": "Mais azeitonas na sua pizza", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_azeitona.png", "valor": 3, "eh_novidade": false }
+    ],
+    "bebidas": [
+      { "id": 1, "nome": "Coca Cola Lata 310 ml", "descricao": "", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_coca.png", "valor": 6, "eh_novidade": false },
+      { "id": 2, "nome": "Guaraná Antarctica 350 ml", "descricao": "", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_guarana.png", "valor": 6, "eh_novidade": false },
+      { "id": 3, "nome": "Suco de Laranja 300 ml", "descricao": "", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_suco.png", "valor": 7, "eh_novidade": false }
+    ]
+  },
+  "sabores": [
+    { "id": 1, "nome": "Calabresa", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_calabresa.png", "descricao": "Pizza de calabresa com cebola, queijo e molho de tomate.", "valor": 40, "eh_novidade": true },
+    { "id": 2, "nome": "Mussarela", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_mussarela.png", "descricao": "Pizza de mussarela com molho de tomate e orégano.", "valor": 38, "eh_novidade": true },
+    { "id": 3, "nome": "Frango com Catupiry", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_frango.png", "descricao": "Pizza de frango desfiado com catupiry.", "valor": 45, "eh_novidade": false },
+    { "id": 4, "nome": "Portuguesa", "foto": "https://static.ifood-static.com.br/image/upload/t_high/pratos/202201251234_portuguesa.png", "descricao": "Pizza de presunto, ovo, cebola, azeitona, queijo e molho de tomate.", "valor": 44, "eh_novidade": false }
+  ]
+}
