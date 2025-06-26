@@ -1,6 +1,11 @@
 <template>
 
     <div>
+        <MessageComponent
+          :type="messageType"
+          :message="messageText"
+          :show="showMessage"
+        />
         <form id="pedido-form" @submit="criarPedido($event)">
             <div>
                 <p id="nome-hamburguer-content">
@@ -64,9 +69,11 @@
 </template>
 
 <script>
+import MessageComponent from './MessageComponent.vue';
 
     export default{
         name : "PedidoComponent",
+        components: { MessageComponent },
         data() {
             return {
                 nomeCliente : "",
@@ -75,7 +82,10 @@
                 listaBebidasSelecionados : [],
                 listaPontoCarne : [],
                 listaComplementos : [],
-                listaBebidas : []
+                listaBebidas : [],
+                showMessage: false,
+                messageType: 'success',
+                messageText: ''
             }
         },
         props: {
@@ -95,7 +105,14 @@
             },
             async criarPedido(e) {
                 e.preventDefault();
-
+                // Validação dos campos obrigatórios
+                if (!this.nomeCliente || !this.pontoCarneSelecionado) {
+                  this.messageType = 'alert';
+                  this.messageText = 'Preencha o nome e selecione o ponto da carne.';
+                  this.showMessage = true;
+                  setTimeout(() => { this.showMessage = false; }, 3000);
+                  return;
+                }
                 const dadosPedido = {
                     nome : this.nomeCliente,
                     ponto : this.pontoCarneSelecionado,
@@ -110,6 +127,20 @@
                     headers: {"Content-Type" : "application/json"},
                     body: dadosJson
                 });
+                if (req.ok) {
+                  this.messageType = 'success';
+                  this.messageText = 'Pedido criado com sucesso!';
+                  this.showMessage = true;
+                  setTimeout(() => { 
+                    this.showMessage = false; 
+                    this.$router.push('/pedidos');
+                  }, 2000);
+                  // Limpar campos do formulário
+                  this.nomeCliente = '';
+                  this.pontoCarneSelecionado = '';
+                  this.listaComplementosSelecionados = [];
+                  this.listaBebidasSelecionados = [];
+                }
             }
 
         },
