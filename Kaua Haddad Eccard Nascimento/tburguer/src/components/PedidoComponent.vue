@@ -70,8 +70,8 @@
             return {
                 nomeCliente : "",
                 pontoCarneSelecionado: "",
-                listaComplementosSelecionados: "",
-                listaBebidasSelecionadas: "",
+                listaComplementosSelecionados: [],
+                listaBebidasSelecionadas: [],
                 listaPontoCarne : [],
                 listaComplementos : [],
                 listaBebidas : []
