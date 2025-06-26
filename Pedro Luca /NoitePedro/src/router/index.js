@@ -1,16 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MenuView from "@/views/MenuView.vue";
-import PedidosView from "@/views/PedidosView.vue";
-<<<<<<< HEAD
+import HomeView from "../views/HomeView.vue";
+import AboutView from "../views/AboutView.vue";
+import MenuView from "../views/MenuView.vue";
+import ListaPedidoComponent from "@/components/ListaPedidoComponent.vue";
 import ConfiguracaoPedidoView from "@/views/ConfiguracaoPedidoView.vue";
-=======
->>>>>>> e1660a4 (Minhas alterações no projeto)
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: MenuView,
+    component: HomeView,
   },
   {
     path: "/menu",
@@ -18,18 +17,20 @@ const routes = [
     component: MenuView,
   },
   {
-    path: "/pedidos",
-    name: "pedidos",
-    component: PedidosView,
+    path: "/sobre",
+    name: "sobre",
+    component: AboutView,
   },
-<<<<<<< HEAD
   {
     path: "/config-pedido",
     name: "config-pedido",
     component: ConfiguracaoPedidoView,
   },
-=======
->>>>>>> e1660a4 (Minhas alterações no projeto)
+  {
+    path: "/pedidos",
+    name: "pedidos",
+    component: ListaPedidoComponent,
+  },
 ];
 
 const router = createRouter({

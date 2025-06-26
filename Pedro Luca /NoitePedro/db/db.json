@@ -1,0 +1,175 @@
+{
+  "tipos_pontos": [
+    {
+      "id": "1",
+      "descricao": "Recheada"
+    },
+    {
+      "id": "2",
+      "descricao": "Sem recheio"
+    },
+    {
+      "id": "3",
+      "descricao": "Recheada Nutella"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": "1",
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": "2",
+      "descricao": "Em produção"
+    },
+    {
+      "id": "3",
+      "descricao": "A caminho"
+    },
+    {
+      "id": "4",
+      "descricao": "Entregue"
+    },
+    {
+      "id": "5",
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": "6",
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Batata",
+        "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+        "valor": 11,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Batata ondulada sequinha e crocante temperada com lemon pepper",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431455651d7d5fd3661_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Arretado",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1698926982654391866e311_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, suculento blend de 160 gramas flambado na manteiga de garrafa, coberto de queijo coalho e finalizado com geléia de pimenta Queensberry",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Camarão Paulista",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/201906131346_d4cY_d.jpg",
+        "descricao": "Camarão Paulista ao alho e olho ( camarão inteiro com casca).",
+        "valor": 101,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Coração de Frango",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/201906131345_88z0_d.jpg",
+        "descricao": "Coração de frango acebolado.",
+        "valor": 59,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Filé à Palito ao Molho Catupiry",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/201910241737_ln8e__.jpg",
+        "descricao": "Acompanha torradas (serve 2 pessoas)",
+        "valor": 90,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Picanha na Chapa - Completa",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/201906131347_EYdc_d.jpg",
+        "descricao": "Batata cozida, queijo e cheiro verde, acompanha arroz, feijão tropeiro e salada",
+        "valor": 49,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Salmão ao Molho de Alcaparras",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/201905221459_GFDW_d.jpg",
+        "descricao": "File de salmão grelhado no molho de alcaparras e arroz com brócolis - serve 1 pessoa.",
+        "valor": 55,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Costelinha Suína ao Molho Barbecue",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/202005192122_LsAF__.jpg",
+        "descricao": "Acompanha arroz branco e batata frita.",
+        "valor": 88,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Carne de Sol Kids",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/201912131809_FA9q__.jpg",
+        "descricao": "Carne de Sol, Arroz Branco, Feijão Preto e Batata Frita - Serve 1 Criança",
+        "valor": 60,
+        "eh_novidade": true
+      },
+      {
+        "id": 8,
+        "nome": "Salada Italiana",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2fe4ddd3-8eba-4829-8c26-f412bc0a9cef/202212021945_P4O2_i.jpg",
+        "descricao": "Alface, rúcula, queijo minas, tomate seco, tomate cereja, azeitonas pretas, croutons, vinagre balsâmico.",
+        "valor": 65,
+        "eh_novidade": true
+      }
+    ]
+  }
+}

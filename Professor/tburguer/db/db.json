@@ -12,7 +12,11 @@
       "id": 3,
       "descricao": "Mal passada"
     },
+<<<<<<< HEAD
     {
+=======
+     {
+>>>>>>> e1660a4 (Minhas alterações no projeto)
       "id": 4,
       "descricao": "Boi morreu em vão"
     }
@@ -80,6 +84,7 @@
         "eh_novidade": true
       },
       "id": 2
+<<<<<<< HEAD
     },
     {
       "nome": "dsadasdasd",
@@ -118,6 +123,8 @@
         "eh_novidade": true
       },
       "id": 4
+=======
+>>>>>>> e1660a4 (Minhas alterações no projeto)
     }
   ],
   "opcionais": {

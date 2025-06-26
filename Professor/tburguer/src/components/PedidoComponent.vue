@@ -1,11 +1,20 @@
 <template>
     <div>
+<<<<<<< HEAD
         <form id="pedido-form" @submit="criarPedido($event)">
             <div>
                 <p id="nome-hamburguer-content">
                     {{ burguer && burguer.nome ? burguer.nome : "-" }}
                 </p>
                 <img id="foto-content" :src="burguer && burguer.foto ? burguer.foto : ''"/>
+=======
+        <form id="pedido-form">
+            <div>
+                <p id="nome-hamburguer-content">
+                    NOME BURGUER
+                </p>
+                <img id="foto-content" src=""/>
+>>>>>>> e1660a4 (Minhas alterações no projeto)
             </div>
             <div class="inputs" id="form-pedido">
                 <label for="nome_cliente">Nome</label>
@@ -18,6 +27,7 @@
             </div>
              <div class="inputs">
                 <label for="ponto-carne">Ponto da carne</label>
+<<<<<<< HEAD
 
                 <select 
                     name="ponto-carne" 
@@ -27,12 +37,19 @@
                     <option v-for="pontoCarne in listaPontoCarne" 
                             :key="pontoCarne.id" 
                             :value="pontoCarne">{{ pontoCarne.descricao }}</option>
+=======
+                <select name="ponto-carne" id="ponto-carne" v-model="pontoCarneSelecionado">
+                    <option value="" selected>Selecione o ponto</option>
+                    <option value="1">Bem passado</option>
+                    <option value="2">Mal passado</option>
+>>>>>>> e1660a4 (Minhas alterações no projeto)
                 </select>
             </div>
             <div id="opcionais-titulo" class="inputs">
                 <label id="opcionais-titulo" for="Opcionais">Selecione os opcionais</label>
                 <label id="opcionais-subtitulo" for="Complemento">Adicione um complemento</label>
 
+<<<<<<< HEAD
                 <div class="checkbox-container" 
                      v-for="complemento in listaComplementos"
                      :key="complemento.id">
@@ -41,10 +58,16 @@
                            :value="complemento" 
                            v-model="listaComplementosSelecionados">
                     <span>{{ complemento.nome }}</span>
+=======
+                <div class="checkbox-container">
+                    <input type="checkbox" name="complemento" value="1" v-model="listaComplementosSelecionados">
+                    <span>Batata</span>
+>>>>>>> e1660a4 (Minhas alterações no projeto)
                 </div>
 
                 <label for="Complemento">Adcione uma bebida</label>
 
+<<<<<<< HEAD
                  <div class="checkbox-container"
                       v-for="bebida in listaBebidas" :key="bebida.id">
                     <input type="checkbox" 
@@ -52,6 +75,11 @@
                            :value="bebida" 
                            v-model="listaBebidasSelecionadas">
                     <span>{{ bebida.nome }}</span>
+=======
+                 <div class="checkbox-container">
+                    <input type="checkbox" name="complemento" value="1" v-model="listaBebidasSelecionadas">
+                    <span>Refri</span>
+>>>>>>> e1660a4 (Minhas alterações no projeto)
                 </div>
             </div>
             <div class="inputs">
@@ -75,9 +103,12 @@
                 listaBebidas : []
             }
         },
+<<<<<<< HEAD
         props: {
             burguer : null
         },
+=======
+>>>>>>> e1660a4 (Minhas alterações no projeto)
         methods: {
             async getTipoPontos() {
                 const response = await fetch("http://localhost:3000/tipos_pontos");
@@ -90,6 +121,7 @@
                 this.listaComplementos = data.complemento;
                 this.listaBebidas = data.bebidas;
             },
+<<<<<<< HEAD
             async criarPedido(e) {
                 e.preventDefault();
 
@@ -108,6 +140,8 @@
                     body: dadosJson
                 });
             }
+=======
+>>>>>>> e1660a4 (Minhas alterações no projeto)
 
         },
         mounted(){
@@ -115,11 +149,16 @@
             this.getOpcionais();
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e1660a4 (Minhas alterações no projeto)
     }
 </script>
 
 <style scoped>
 
+<<<<<<< HEAD
 #foto-content {
     margin-bottom: 16px;
     border-radius: 16px;
@@ -218,4 +257,6 @@ select {
 }
 
 
+=======
+>>>>>>> e1660a4 (Minhas alterações no projeto)
 </style>

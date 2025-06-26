@@ -1,7 +1,11 @@
 <template>
     <div>
         <h1>Configurar Pedido</h1>
+<<<<<<< HEAD
         <pedido-component :burguer="this.hamburguerSelecionado"/>
+=======
+        <pedido-component/>
+>>>>>>> e1660a4 (Minhas alterações no projeto)
     </div>
 </template>
 
