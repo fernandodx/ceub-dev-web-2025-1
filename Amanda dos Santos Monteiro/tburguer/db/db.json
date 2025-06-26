@@ -2,15 +2,15 @@
   "tipos_pontos": [
     {
       "id": 1,
-      "descricao": "Ao ponto"
+      "descricao": "Carne ao ponto"
     },
     {
       "id": 2,
-      "descricao": "Bem passada"
+      "descricao": "Carne bem passada"
     },
     {
       "id": 3,
-      "descricao": "Mal passada"
+      "descricao": "Carne mal passada"
     }
   ],
   "status_pedido": [
@@ -39,96 +39,31 @@
       "descricao": "Pedido realizado"
     }
   ],
-  "pedidos": [
-    {
-      "nome": "gdgzagaz",
-      "ponto": {
-        "id": 1,
-        "descricao": "Ao ponto"
-      },
-      "bebidas": [],
-      "complemento": [],
-      "statusId": 5,
-      "hamburguer": {
-        "id": 5,
-        "nome": "Braseirão",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1701549228656b94ac481d3_75_75.jpeg",
-        "descricao": "Delicioso hambúrguer no pão de brioche selado na brasa, com manteiga de leite, maionese especial com toque de alho e ervas, dois suculentos blend's de 160 gramas e queijo mussarela derretido na brasa.",
-        "valor": 30,
-        "eh_novidade": true
-      },
-      "id": 3
-    },
-    {
-      "nome": "",
-      "ponto": "",
-      "bebidas": [],
-      "complemento": [],
-      "statusId": 5,
-      "hamburguer": {
-        "id": 1,
-        "nome": "Diretoria Alterado",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429768651d76c8124dc_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, tomate grelhado e defumado na brasa, suculento blend de 160 gramas, queijo derretido na brasa, molho suave de gorgonzola coberto de crispy de alho poró.",
-        "valor": 35,
-        "eh_novidade": true
-      },
-      "id": 4
-    },
-    {
-      "nome": "dgageag",
-      "ponto": {
-        "id": 1,
-        "descricao": "Ao ponto"
-      },
-      "bebidas": [
-        {
-          "id": 1,
-          "nome": "Coca Cola Lata 310 ml",
-          "descricao": "",
-          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
-          "valor": 6,
-          "eh_novidade": false
-        }
-      ],
-      "complemento": [
-        {
-          "id": 1,
-          "nome": "Combo Bebida + Batata",
-          "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
-          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
-          "valor": 11,
-          "eh_novidade": true
-        }
-      ],
-      "statusId": 5,
-      "hamburguer": {
-        "id": 1,
-        "nome": "Diretoria Alterado",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429768651d76c8124dc_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, tomate grelhado e defumado na brasa, suculento blend de 160 gramas, queijo derretido na brasa, molho suave de gorgonzola coberto de crispy de alho poró.",
-        "valor": 35,
-        "eh_novidade": true
-      },
-      "id": 5
-    }
-  ],
+  "pedidos": [],
   "opcionais": {
     "complemento": [
       {
         "id": 1,
-        "nome": "Combo Bebida + Batata",
-        "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+        "nome": "Combo Bebida + Nachos",
+        "descricao": "Nachos crocantes com queijo derretido e guacamole + bebida de sua escolha",
+        "foto": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400",
         "valor": 11,
         "eh_novidade": true
       },
       {
         "id": 2,
-        "nome": "Batata ondulada sequinha e crocante temperada com lemon pepper",
+        "nome": "Nachos con Queso y Guacamole",
         "descricao": "",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+        "foto": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400",
         "valor": 7,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Guacamole Fresco",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+        "valor": 5,
         "eh_novidade": false
       }
     ],
@@ -164,6 +99,14 @@
         "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
         "valor": 7,
         "eh_novidade": false
+      },
+      {
+        "id": 5,
+        "nome": "Margarita Tradicional",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400",
+        "valor": 12,
+        "eh_novidade": true
       }
     ]
   },
@@ -171,9 +114,9 @@
     "limitado": [
       {
         "id": 1,
-        "nome": "Arretado",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1698926982654391866e311_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, suculento blend de 160 gramas flambado na manteiga de garrafa, coberto de queijo coalho e finalizado com geléia de pimenta Queensberry",
+        "nome": "Taco Especial del Chef",
+        "foto": "https://images.unsplash.com/photo-1599974579688-8dbcc335180f?w=400",
+        "descricao": "Tortilla de milho artesanal, carne bovina premium grelhada na chapa, cebola caramelizada, queijo Oaxaca derretido, salsa verde e creme azedo fresco",
         "valor": 38,
         "eh_novidade": true
       }
@@ -181,57 +124,57 @@
     "burgues": [
       {
         "id": 1,
-        "nome": "Diretoria Alterado",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429768651d76c8124dc_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, tomate grelhado e defumado na brasa, suculento blend de 160 gramas, queijo derretido na brasa, molho suave de gorgonzola coberto de crispy de alho poró.",
+        "nome": "Taco al Pastor",
+        "foto": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+        "descricao": "Tortilla de milho fresca, carne de porco marinada em achiote e especiarias, grelhada no trompo vertical, servida com cebola, coentro e abacaxi grelhado.",
         "valor": 35,
         "eh_novidade": true
       },
       {
         "id": 2,
-        "nome": "Veggie",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429812651d76f4d8671_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese secreta, tomate assado e defumado na lenha frutífera, blend de arroz negro, batata baroa e Shimeji 150 gramas grelhado e regado ao azeite , queijo derretido na brasa e molho secreto de cebola caramelizada, tudo preparado com aquele sabor de churrasco.",
+        "nome": "Taco de Nopales",
+        "foto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400",
+        "descricao": "Tortilla de milho integral, nopales (palma) grelhados, feijão preto refogado, queijo fresco, salsa pico de gallo e creme de chipotle.",
         "valor": 35,
         "eh_novidade": true
       },
       {
         "id": 3,
-        "nome": "Doritos",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429871651d772fb9fbe_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial, suculento blend de 160 gramas, queijo cheddar derretido na brasa, cream cheese e Doritos.",
+        "nome": "Taco de Pollo",
+        "foto": "https://images.unsplash.com/photo-1599974579688-8dbcc335180f?w=400",
+        "descricao": "Tortilla de milho fresca, frango grelhado com especiarias mexicanas, cebola roxa, queijo derretido e salsa verde.",
         "valor": 32,
         "eh_novidade": true
       },
       {
         "id": 4,
-        "nome": "Campeiro",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696432070651d7fc6b7c98_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, alface americana fresca e crocante, tomate grelhado e defumado, suculento hambúrguer de 160 gramas, queijo derretido na brasa.",
+        "nome": "Taco de Carnitas",
+        "foto": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+        "descricao": "Tortilla de milho fresca, carne de porco confitada e temperada, cebola caramelizada, queijo derretido e salsa roja.",
         "valor": 30,
         "eh_novidade": true
       },
       {
         "id": 5,
-        "nome": "Braseirão",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1701549228656b94ac481d3_75_75.jpeg",
-        "descricao": "Delicioso hambúrguer no pão de brioche selado na brasa, com manteiga de leite, maionese especial com toque de alho e ervas, dois suculentos blend's de 160 gramas e queijo mussarela derretido na brasa.",
+        "nome": "Taco Mixto",
+        "foto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400",
+        "descricao": "Duas tortillas de milho frescas, carne bovina e frango grelhados, queijo derretido, guacamole e salsa fresca.",
         "valor": 30,
         "eh_novidade": true
       },
       {
         "id": 6,
-        "nome": "Braseiro",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696432090651d7fda3ebe1_75_75.jpeg",
-        "descricao": "Delicioso hambúrguer no pão de brioche selado na brasa, com manteiga de leite, maionese especial com toque de alho e ervas, suculento blend de 160 gramas, triplo queijo cheddar derretido na brasa.",
+        "nome": "Taco de Carne Asada",
+        "foto": "https://images.unsplash.com/photo-1599974579688-8dbcc335180f?w=400",
+        "descricao": "Tortilla de milho fresca, carne bovina grelhada na brasa, queijo derretido e salsa fresca.",
         "valor": 20,
         "eh_novidade": true
       },
       {
         "id": 7,
-        "nome": "Churrasqueto",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16978359266532eb960c34d_75_75.jpeg",
-        "descricao": "Delicioso hambúrguer no pão de brioche selado na brasa, com manteiga de leite, maionese especial com toque de alho e ervas, suculento blend de 120 gramas, triplo queijo cheddar derretido na brasa.",
+        "nome": "Taco de Pescado",
+        "foto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400",
+        "descricao": "Tortilla de milho fresca, peixe grelhado com limão e ervas, repolho roxo, creme azedo e salsa verde.",
         "valor": 15,
         "eh_novidade": true
       }

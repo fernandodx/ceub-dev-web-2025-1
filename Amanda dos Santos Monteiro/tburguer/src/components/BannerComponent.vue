@@ -1,6 +1,6 @@
 <template>
     <div id="main-banner">
-        <h1>Hambúrguer de Churrasqueiro</h1>
+        <h1>Tacos Mexicanos</h1>
 
     </div>
 </template>
@@ -14,8 +14,8 @@
 <style scoped>
 
     #main-banner {
-        background-image: url("/public/img/banner.jpeg");
-        background-position: 0;
+        background-image: url("https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200");
+        background-position: center;
         background-size: cover;
         height: 500px;
         display: flex;

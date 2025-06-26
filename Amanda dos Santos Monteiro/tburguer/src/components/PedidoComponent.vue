@@ -1,11 +1,21 @@
 <template>
 <div>
+    <MensagemComponent
+      :tipo="'alerta'"
+      :texto="mensagemAlerta"
+      :visivel="mostrarAlerta"
+    />
+    <MensagemComponent
+      :tipo="'sucesso'"
+      :texto="mensagemSucesso"
+      :visivel="mostrarSucesso"
+    />
     <form id="pedido-form" @submit="criarPedido($event)">
         <div>
             <p id="nome-hamburguer-content">
-                {{ burguer && burguer.nome ? burguer.nome : "-" }}
+                {{ taco && taco.nome ? taco.nome : "-" }}
             </p>
-            <img id="foto-content" :src="burguer && burguer.foto ? burguer.foto : ''"/>
+            <img id="foto-content" :src="taco && taco.foto ? taco.foto : ''"/>
         </div>
         <div class="inputs" id="form-pedido">
             <label for="nome_cliente">Nome</label>
@@ -62,8 +72,10 @@
 </template>
 
 <script>
+    import MensagemComponent from './MensagemComponent.vue';
     export default{
         name: "PedidoComponent",
+        components: { MensagemComponent },
         data(){
             return {
                 nomeCliente : "",
@@ -72,11 +84,15 @@
                 listaBebidasSelecionadas: [],
                 listaPontoCarne : [],
                 listaComplementos : [],
-                listaBebidas : []
+                listaBebidas : [],
+                mostrarAlerta: false,
+                mensagemAlerta: '',
+                mostrarSucesso: false,
+                mensagemSucesso: ''
             }
         },
         props: {
-            burguer : null
+            taco : null
         },
         methods: {
             async getTipoPontos(){
@@ -93,13 +109,22 @@
             async criarPedido(e) {
                 e.preventDefault();
 
+                this.mostrarAlerta = false;
+                this.mostrarSucesso = false;
+
+                if (!this.nomeCliente || !this.pontoCarneSelecionado) {
+                  this.mensagemAlerta = 'Preencha o nome e selecione o ponto da carne!';
+                  this.mostrarAlerta = true;
+                  return;
+                }
+
                 const dadosPedido = {
                     nome : this.nomeCliente,
                     ponto : this.pontoCarneSelecionado,
                     bebidas : Array.from(this.listaBebidasSelecionadas),
                     complemento : Array.from(this.listaComplementosSelecionados),
                     statusId: 5,
-                    hamburguer: this.burguer
+                    hamburguer: this.taco
                 }
                 const dadosJson = JSON.stringify(dadosPedido);
                 const req = await fetch("http://localhost:3000/pedidos", {
@@ -107,7 +132,19 @@
                     headers: {"Content-Type" : "application/json"},
                     body: dadosJson
                 });
-
+                if (req.ok) {
+                  this.mensagemSucesso = 'Pedido de taco criado com sucesso!';
+                  this.mostrarSucesso = true;
+                  this.nomeCliente = '';
+                  this.pontoCarneSelecionado = '';
+                  this.listaComplementosSelecionados = [];
+                  this.listaBebidasSelecionadas = [];
+                  
+                  // Navegar para a tela de pedidos após 2 segundos
+                  setTimeout(() => {
+                    this.$router.push('/pedidos');
+                  }, 2000);
+                }
             }
 
         },

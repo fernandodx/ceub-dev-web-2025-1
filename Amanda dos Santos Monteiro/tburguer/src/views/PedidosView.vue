@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Pedido</h1>
+        <h1>Pedidos de Tacos</h1>
         <lista-pedido-component/>
     </div>
 

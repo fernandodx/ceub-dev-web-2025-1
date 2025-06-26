@@ -1,12 +1,16 @@
 <template>
     <div>
-        <!-- Adicione uma componente para exibir as mensagem de erro e sucesso -->
-         <div id="pedidos-tabela">
+        <MensagemComponent
+          :tipo="'sucesso'"
+          :texto="mensagemSucesso"
+          :visivel="mostrarSucesso"
+        />
+        <div v-if="listaPedidosRealizados.length > 0" id="pedidos-tabela">
             <div>
                 <div id="pedidos-tabela-cabecalho">
                     <div id="ordem-id">#ID</div>
                     <div>Nome</div>
-                    <div>Hamburguer</div>
+                    <div>Taco</div>
                     <div>Ponto</div>
                     <div>Opcionais</div>
                     <div>Status</div>
@@ -14,7 +18,7 @@
                 </div>
             </div>
          </div>
-         <div class="pedidos-tabela-linha" v-for="pedido in listaPedidosRealizados" :key="pedido.id">
+         <div v-if="listaPedidosRealizados.length > 0" class="pedidos-tabela-linha" v-for="pedido in listaPedidosRealizados" :key="pedido.id">
             <div id="ordem-numero">{{ pedido.id }}</div>
             <div>{{ pedido.nome }}</div>
             <div>{{ pedido.hamburguer.nome }}</div>
@@ -45,16 +49,20 @@
                      @click="deletarPedido(pedido.id)"/>
             </div>
          </div>
-
+         <div v-else style="margin: 32px 0; text-align: center; font-size: 1.2rem; color: #888;">Nenhum pedido de taco cadastrado.</div>
     </div>
 </template>
 <script>
+    import MensagemComponent from './MensagemComponent.vue';
     export default {
         name: "ListaPedidoComponent",
+        components: { MensagemComponent },
         data() {
             return {
                 listaPedidosRealizados: [],
-                listaStatusPedido: []
+                listaStatusPedido: [],
+                mostrarSucesso: false,
+                mensagemSucesso: ''
             }
         },
         methods: {
@@ -70,17 +78,26 @@
                 const response = await fetch(`http://localhost:3000/pedidos/${id}`, {
                     method: "DELETE"
                 });
+                if (response.ok) {
+                  this.mensagemSucesso = 'Pedido removido com sucesso!';
+                  this.mostrarSucesso = true;
+                  this.consultarPedidos();
+                }
             },
             async atualizarStatusPedido(event, idPedido){
                 const idPedidoAtualizado = event.target.value;
 
                 const atualizacaoJson = JSON.stringify({statusId : idPedidoAtualizado});
-                await fetch(`http://localhost:3000/pedidos/${idPedido}`, {
+                const response = await fetch(`http://localhost:3000/pedidos/${idPedido}`, {
                     method : "PATCH",
                     headers: {"Content-Type" : "application/json"},
                     body: atualizacaoJson
                 })
-
+                if (response.ok) {
+                  this.mensagemSucesso = 'Status do pedido atualizado com sucesso!';
+                  this.mostrarSucesso = true;
+                  this.consultarPedidos();
+                }
             }
         },
         mounted() {

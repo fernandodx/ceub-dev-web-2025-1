@@ -1,4 +1,6 @@
-# tburguer
+# Tacos Mexicanos
+
+Sistema de pedidos de tacos mexicanos desenvolvido em Vue.js.
 
 ## Project setup
 ```

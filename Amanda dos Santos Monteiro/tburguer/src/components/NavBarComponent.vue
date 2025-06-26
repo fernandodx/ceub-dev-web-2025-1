@@ -4,7 +4,7 @@
             <router-link to="/" id="logo-url">
                 <img src="/img/logo_tburguer.png" id="logo"/> 
             </router-link>
-            <router-link to="/Menu">Menu</router-link>
+            <router-link to="/Menu">Menu de Tacos</router-link>
             <router-link to="/Pedidos">Pedidos</router-link>
         </nav>
     </div>

@@ -1,17 +1,17 @@
 <template>
     <div>
-        <h1>Menu</h1>
+        <h1>Menu de Tacos</h1>
         <div id="scroll-horizontal">
-            <div id="card-content" v-for="burguer in listaMenuHamburgues" :key="burguer.id">
+            <div id="card-content" v-for="taco in listaMenuTacos" :key="taco.id">
                 <div id="card-linha">
                     <div class="foto-hamburguer">
-                        <img :src="burguer.foto" 
-                        :alt="burguer.nome">
+                        <img :src="taco.foto" 
+                        :alt="taco.nome">
                         <div class="card-coluna">
-                            <p id="nome-content">{{ burguer.nome }}</p>
-                            <p id="preco-content">{{ burguer.valor }},00</p>
-                            <p id="descricao-content">{{ burguer.descricao }}</p>
-                            <button @click="selecionarBurguer(burguer)">Selecionar</button>
+                            <p id="nome-content">{{ taco.nome }}</p>
+                            <p id="preco-content">{{ taco.valor }},00</p>
+                            <p id="descricao-content">{{ taco.descricao }}</p>
+                            <button @click="selecionarTaco(taco)">Selecionar</button>
                         </div>
                     </div>
                 </div>
@@ -26,21 +26,21 @@
         name: "MenuView",
         data() {
             return {
-                listaMenuHamburgues: []
+                listaMenuTacos: []
             };
         },
         methods: {
             async consultarMenu( ) {
                 const response = await fetch("http://localhost:3000/menu");
                 const dados = await response.json();
-                this.listaMenuHamburgues = dados.burgues;
-                console.log(this.listaMenuHamburgues);
+                this.listaMenuTacos = dados.burgues;
+                console.log(this.listaMenuTacos);
             },
-            selecionarBurguer(burguerSelecionado) {
-                const param = JSON.stringify(burguerSelecionado);
-                const burguerJson = encodeURIComponent(param);
+            selecionarTaco(tacoSelecionado) {
+                const param = JSON.stringify(tacoSelecionado);
+                const tacoJson = encodeURIComponent(param);
                 //Pegar o router e dar um push na nova tela.
-                this.$router.push({path: '/config-pedido', query : {burguer : burguerJson}});
+                this.$router.push({path: '/config-pedido', query : {taco : tacoJson}});
             }
         },
         mounted(){
