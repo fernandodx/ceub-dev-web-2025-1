@@ -1,0 +1,175 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Tradicional"
+    },
+    {
+      "id": 2,
+      "descricao": "Fina"
+    },
+    {
+      "id": 3,
+      "descricao": "Grossa"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Batata",
+        "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+        "valor": 11,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Borda Recheada",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
+        "valor": 5,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431455651d7d5fd3661_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Pizza do Chef",
+        "foto": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 45,
+        "eh_novidade": true
+      }
+    ],
+    "pizzas": [
+      {
+        "id": 1,
+        "nome": "Margherita",
+        "foto": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Pepperoni",
+        "foto": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 38,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Quatro Queijos",
+        "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 40,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Calabresa",
+        "foto": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 32,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Frango com Catupiry",
+        "foto": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 36,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Portuguesa",
+        "foto": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 34,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Vegetariana",
+        "foto": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 8,
+        "nome": "Strogonoff",
+        "foto": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+        "descricao": "",
+        "valor": 42,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
