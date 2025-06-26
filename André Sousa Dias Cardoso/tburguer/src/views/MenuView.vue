@@ -11,7 +11,7 @@
                     <p id="nome-content">{{ burguer.nome }}</p>
                     <p id="preco-content">R$ {{ burguer.valor }}</p>
                     <p id="descricao-content">{{ burguer.descricao }},00</p>
-                    <button>Selecionar</button>
+                    <button @click="selecionarBurguer(burguer)">Selecionar</button>
 
                     
                     </div>
@@ -37,7 +37,7 @@ export default {
             const response = await fetch(" http://localhost:3000/menu");
             const dados = await response.json();
             this.listaMenuHamburguer = dados.burgues;
-            console.log(this.listaMenuHamburguer)
+            console.log(this.listaMenuHamburguer);
 
         },
 
@@ -46,7 +46,7 @@ export default {
             const param = JSON.stringify(burguerSelecionado);
             const burguerJson = encodeURIComponent(param);
             //Pegar o router e dar um push na nova tela.
-            this.$router.push({path: '/config-pedido', query: {burguer: burguerJson}});
+            this.$router.push({path: '/config-pedido', query: {burguer : burguerJson}});
 
 
         }
