@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form id="pedido-form">
+        <form id="pedido-form" @submit="criarPedido($event)">
             <div>
                 <p id="nome-hamburguer-content">
                     {{ burguer && burguer.nome ? burguer.nome : "-" }}
@@ -68,8 +68,8 @@
             return {
                 nomeCliente : "",
                 pontoCarneSelecionado: "",
-                listaComplementosSelecionados: "",
-                listaBebidasSelecionadas: "",
+                listaComplementosSelecionados: [],
+                listaBebidasSelecionadas: [],
                 listaPontoCarne : [],
                 listaComplementos : [],
                 listaBebidas : []
@@ -96,8 +96,8 @@
                 const dadosPedido = {
                     nome : this.nomeCliente,
                     ponto : this.pontoCarneSelecionado,
-                    bebidas : Array.from(this.listaBebidas),
-                    complemento : Array.from(this.complemento),
+                    bebidas : Array.from(this.listaBebidasSelecionadas),
+                    complemento : Array.from(this.listaComplementosSelecionados),
                     statusId: 5,
                     hamburguer: this.burguer
                 }
@@ -127,7 +127,7 @@
     z-index: -1;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 180px;
     object-fit: cover;
 }
 
