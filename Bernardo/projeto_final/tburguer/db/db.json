@@ -1,0 +1,175 @@
+{
+  "tipos_pontos": [
+    {
+      "id": "1",
+      "descricao": "Forte"
+    },
+    {
+      "id": "2",
+      "descricao": "Normal"
+    },
+    {
+      "id": "3",
+      "descricao": "Fraco"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": "1",
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": "2",
+      "descricao": "Em produção"
+    },
+    {
+      "id": "3",
+      "descricao": "A caminho"
+    },
+    {
+      "id": "4",
+      "descricao": "Entregue"
+    },
+    {
+      "id": "5",
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": "6",
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Batata",
+        "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+        "valor": 11,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Batata ondulada sequinha e crocante temperada com lemon pepper",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431455651d7d5fd3661_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Arretado",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1698926982654391866e311_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, suculento blend de 160 gramas flambado na manteiga de garrafa, coberto de queijo coalho e finalizado com geléia de pimenta Queensberry",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Temaki",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903191130_temak.jpg",
+        "descricao": "Tradicional cone de alga nori crocante, recheado com arroz japonês temperado, salmão fresco, tiras de pepino crocante, cebolinha e cream cheese, servido com molho shoyu para harmonizar.",
+        "valor": 19,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Combo p/ 4",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201910310538_JflK_d.jpg",
+        "descricao": "Combo especial para quatro pessoas com seleção premium de sushis e sashimis: 12 sashimis de salmão fresco, 8 niguiris variados, 16 uramakis especiais, 8 hots crocantes e 8 jow saborosos. Acompanhado de shoyu, gengibre e wasabi para uma experiência completa e autêntica.",
+        "valor": 80,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Empanado",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903190945_1cama.jpg",
+        "descricao": "Camarões graúdos, marinados em temperos especiais, empanados com farinha panko para uma crocância irresistível e fritos até ficarem dourados por fora e macios por dentro.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Chevice",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903190955_cevic.jpg",
+        "descricao": "Peixe branco marinado no limão, flor de sal e regado no azeite trufado.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Sunomono",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903190952_sunom.jpg",
+        "descricao": "Refrescante salada japonesa com finas fatias de pepino marinado em molho agridoce à base de vinagre de arroz, açúcar e gergelim tostado. Levemente crocante, leve e saborosa, ideal como entrada para realçar os sabores orientais da refeição.",
+        "valor": 23,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Sashimi's",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903191125_comoc.jpg",
+        "descricao": "Fatias frescas e selecionadas de salmão, atum e peixe branco, cortadas com precisão e servidas cruas para destacar a pureza e a textura dos peixes. Acompanha shoyu, wasabi e gengibre em conserva para uma explosão de sabores tradicionais da culinária japonesa.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Super hot",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903191122_downl.jpg",
+        "descricao": "Rolinho empanado e crocante recheado com salmão, cream cheese e cebolinha, empanado na farinha panko e frito até a perfeição. Servido com molho tarê artesanal para equilibrar o sabor cremoso e crocante em cada mordida.",
+        "valor": 32,
+        "eh_novidade": true
+      },
+      {
+        "id": 8,
+        "nome": "Uramaki",
+        "foto": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/a7104ae7-905d-4e75-ba41-69d2fc0a50c2/201903191043_2d40c.jpg",
+        "descricao": "Uramaki invertido com arroz temperado por fora, recheado com pele de salmão crocante, cream cheese e cebolinha fresca. Finalizado com gergelim levemente torrado e um toque de molho tarê para realçar o sabor defumado e a textura crocante da skin.",
+        "valor": 40,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
