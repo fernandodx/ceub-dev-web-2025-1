@@ -139,8 +139,6 @@
                   this.pontoCarneSelecionado = '';
                   this.listaComplementosSelecionados = [];
                   this.listaBebidasSelecionadas = [];
-                  
-                  // Navegar para a tela de pedidos após 2 segundos
                   setTimeout(() => {
                     this.$router.push('/pedidos');
                   }, 2000);
@@ -235,22 +233,18 @@ select {
 }
 
 .submit-btn {
-    background-color: #222;
-    color: darkgoldenrod;
+    background: #e0ffe6;
+    color: #155724;
+    border: 1px solid #c3e6cb;
     font-weight: bold;
-    border: solid 1px darkgoldenrod;
     border-radius: 8px;
+    padding: 12px 0;
+    font-size: 18px;
     cursor: pointer;
-    padding: 12px;
-    margin: 0 auto;
-    font-size: 16px;
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
-}
-.submit-btn:hover {
-    background-color: darkgoldenrod;
-    color: #222;
+    transition: background 0.3s;
 }
 
+.submit-btn:hover {
+    background: #c3e6cb;
+}
 </style>

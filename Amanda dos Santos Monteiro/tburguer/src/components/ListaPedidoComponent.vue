@@ -52,6 +52,7 @@
          <div v-else style="margin: 32px 0; text-align: center; font-size: 1.2rem; color: #888;">Nenhum pedido de taco cadastrado.</div>
     </div>
 </template>
+
 <script>
     import MensagemComponent from './MensagemComponent.vue';
     export default {
@@ -160,9 +161,5 @@
         height: 1px;
         background-color: darkgoldenrod;
      }
-
-     
-
-
 
 </style>

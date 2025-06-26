@@ -39,7 +39,6 @@
             selecionarTaco(tacoSelecionado) {
                 const param = JSON.stringify(tacoSelecionado);
                 const tacoJson = encodeURIComponent(param);
-                //Pegar o router e dar um push na nova tela.
                 this.$router.push({path: '/config-pedido', query : {taco : tacoJson}});
             }
         },
@@ -107,7 +106,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 6; /* números de linha para cortar */
+            -webkit-line-clamp: 6;
             -webkit-box-orient: vertical;
         }
 
