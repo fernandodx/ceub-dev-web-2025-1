@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer id="footer">
-            <p>Construido por Fernando Dias &copy; 2025</p>
+            <p>Construído por Matheus Henrique &copy; 2025</p>
         </footer>
     </div>
 </template>
