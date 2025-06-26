@@ -1,5 +1,12 @@
 <template>
     <div>
+        <MessageComponent 
+            :show="showMessage" 
+            :type="messageType" 
+            :message="messageText"
+            @close="showMessage = false"
+        />
+        
         <form id="pedido-form" @submit="criarPedido($event)">
             <div>
                 <p id="nome-hamburguer-content">
@@ -62,60 +69,110 @@
 </template>
 
 <script>
-    export default {
-        name : "PedidoComponent",
-        data(){
-            return {
-                nomeCliente : "",
-                pontoCarneSelecionado: "",
-                listaComplementosSelecionados: "",
-                listaBebidasSelecionadas: "",
-                listaPontoCarne : [],
-                listaComplementos : [],
-                listaBebidas : []
-            }
-        },
-        props: {
-            burguer : null
-        },
-        methods: {
-            async getTipoPontos() {
-                const response = await fetch("http://localhost:3000/tipos_pontos");
-                const data = await response.json();
-                this.listaPontoCarne = data;
-            },
-             async getOpcionais() {
-                const response = await fetch("http://localhost:3000/opcionais");
-                const data = await response.json();
-                this.listaComplementos = data.complemento;
-                this.listaBebidas = data.bebidas;
-            },
-            async criarPedido(e) {
-                e.preventDefault();
+import MessageComponent from './MessageComponent.vue'
 
-                const dadosPedido = {
-                    nome : this.nomeCliente,
-                    ponto : this.pontoCarneSelecionado,
-                    bebidas : Array.from(this.listaBebidasSelecionadas),
-                    complemento : Array.from(this.listaComplementosSelecionados),
-                    statusId: 5,
-                    hamburguer: this.burguer
-                }
-                const dadosJson = JSON.stringify(dadosPedido);
+export default {
+    name : "PedidoComponent",
+    components: {
+        MessageComponent
+    },
+    data(){
+        return {
+            nomeCliente : "",
+            pontoCarneSelecionado: "",
+            listaComplementosSelecionados: "",
+            listaBebidasSelecionadas: "",
+            listaPontoCarne : [],
+            listaComplementos : [],
+            listaBebidas : [],
+            showMessage: false,
+            messageType: 'success',
+            messageText: ''
+        }
+    },
+    props: {
+        burguer : null
+    },
+    methods: {
+        async getTipoPontos() {
+            const response = await fetch("http://localhost:3000/tipos_pontos");
+            const data = await response.json();
+            this.listaPontoCarne = data;
+        },
+         async getOpcionais() {
+            const response = await fetch("http://localhost:3000/opcionais");
+            const data = await response.json();
+            this.listaComplementos = data.complemento;
+            this.listaBebidas = data.bebidas;
+        },
+        validarCampos() {
+            if (!this.nomeCliente.trim()) {
+                this.showAlertMessage('Por favor, preencha o campo Nome');
+                return false;
+            }
+            if (!this.pontoCarneSelecionado) {
+                this.showAlertMessage('Por favor, selecione o ponto da carne');
+                return false;
+            }
+            return true;
+        },
+        showAlertMessage(message) {
+            this.messageType = 'alert';
+            this.messageText = message;
+            this.showMessage = true;
+        },
+        showSuccessMessage(message) {
+            this.messageType = 'success';
+            this.messageText = message;
+            this.showMessage = true;
+        },
+        async criarPedido(e) {
+            e.preventDefault();
+
+            if (!this.validarCampos()) {
+                return;
+            }
+
+            const dadosPedido = {
+                nome : this.nomeCliente,
+                ponto : this.pontoCarneSelecionado,
+                bebidas : Array.from(this.listaBebidasSelecionadas),
+                complementos : Array.from(this.listaComplementosSelecionados),
+                statusId: 5,
+                hamburguer: this.burguer
+            }
+            const dadosJson = JSON.stringify(dadosPedido);
+            
+            try {
                 const req = await fetch("http://localhost:3000/pedidos", {
                     method: "POST",
                     headers: {"Content-Type" : "application/json"},
                     body: dadosJson
                 });
+                
+                if (req.ok) {
+                    this.showSuccessMessage('Pedido criado com sucesso!');
+                    this.limparFormulario();
+                    this.$emit('pedido-criado');
+                } else {
+                    this.showAlertMessage('Erro ao criar pedido. Tente novamente.');
+                }
+            } catch (error) {
+                this.showAlertMessage('Erro ao criar pedido. Tente novamente.');
             }
-
         },
-        mounted(){
-            this.getTipoPontos();
-            this.getOpcionais();
+        limparFormulario() {
+            this.nomeCliente = "";
+            this.pontoCarneSelecionado = "";
+            this.listaComplementosSelecionados = "";
+            this.listaBebidasSelecionadas = "";
         }
-
+    },
+    mounted(){
+        this.getTipoPontos();
+        this.getOpcionais();
     }
+}
 </script>
 
 <style scoped>
