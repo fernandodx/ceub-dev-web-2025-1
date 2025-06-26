@@ -38,7 +38,6 @@
             selecionarBurguer(burguerSelecionado) {
                 const param = JSON.stringify(burguerSelecionado);
                 const burguerJson = encodeURIComponent(param);
-                //Pegar o router e dar um push na nova tela. 
                 this.$router.push({path: '/config-pedido', query: {burguer : burguerJson}});
             } 
         },

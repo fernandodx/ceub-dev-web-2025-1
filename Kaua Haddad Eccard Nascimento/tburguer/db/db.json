@@ -39,24 +39,7 @@
       "descricao": "Pedido realizado"
     }
   ],
-  "pedidos": [
-    {
-      "nome": "",
-      "ponto": "",
-      "bebida": [],
-      "complemento": [],
-      "statusId": "3",
-      "hamburguer": {
-        "id": 1,
-        "nome": "Diretoria Alterado",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429768651d76c8124dc_75_75.jpeg",
-        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, tomate grelhado e defumado na brasa, suculento blend de 160 gramas, queijo derretido na brasa, molho suave de gorgonzola coberto de crispy de alho poró.",
-        "valor": 35,
-        "eh_novidade": true
-      },
-      "id": 3
-    }
-  ],
+  "pedidos": [],
   "opcionais": {
     "complemento": [
       {
@@ -142,7 +125,7 @@
       {
         "id": 3,
         "nome": "Doritos",
-        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429871651d772fb9fbe_75_75.jpeg",
+        "foto": "https://blogsakura.com.br/wp-content/uploads/2021/11/Blog1_01NOV21-1024x558.jpg",
         "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial, suculento blend de 160 gramas, queijo cheddar derretido na brasa, cream cheese e Doritos.",
         "valor": 32,
         "eh_novidade": true

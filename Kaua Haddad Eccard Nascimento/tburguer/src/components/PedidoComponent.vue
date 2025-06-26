@@ -60,12 +60,25 @@
                 <input type="submit" class="submit-btn" value="Confirmar Pedido">
             </div>
         </form>
+
+        <mensagem-component
+            :tipo="mensagem.tipo"
+            :texto="mensagem.texto"
+            :mostrar="mensagem.mostrar"
+            :auto-fechar="3000"
+            @fechar="fecharMensagem"
+        />
     </div>
 </template>
 
 <script>
+    import MensagemComponent from '@/components/MensagemComponent.vue';
+
     export default {
         name : "PedidoComponent",
+        components: {
+            MensagemComponent
+        },
         data(){
             return {
                 nomeCliente : "",
@@ -74,7 +87,12 @@
                 listaBebidasSelecionadas: [],
                 listaPontoCarne : [],
                 listaComplementos : [],
-                listaBebidas : []
+                listaBebidas : [],
+                mensagem: {
+                    tipo: 'sucesso',
+                    texto: '',
+                    mostrar: false
+                }
             }
         },
         props: {
@@ -92,8 +110,33 @@
                 this.listaComplementos = data.complemento;
                 this.listaBebidas = data.bebidas;
             },
+            mostrarMensagem(tipo, texto) {
+                this.mensagem.tipo = tipo;
+                this.mensagem.texto = texto;
+                this.mensagem.mostrar = true;
+            },
+            fecharMensagem() {
+                this.mensagem.mostrar = false;
+            },
+            validarCampos() {
+                if (!this.nomeCliente.trim()) {
+                    this.mostrarMensagem('alerta', 'Por favor, preencha o nome do cliente!');
+                    return false;
+                }
+                
+                if (!this.pontoCarneSelecionado || !this.pontoCarneSelecionado.descricao) {
+                    this.mostrarMensagem('alerta', 'Por favor, selecione o ponto da carne!');
+                    return false;
+                }
+                
+                return true;
+            },
             async criarPedido(e) {
                 e.preventDefault();
+
+                if (!this.validarCampos()) {
+                    return;
+                }
 
                 const dadosPedido = {
                     nome : this.nomeCliente,
@@ -103,12 +146,27 @@
                     statusId: 5,
                     hamburguer: this.burguer
                 }
-                const dadosJson = JSON.stringify(dadosPedido);
-                const req = await fetch("http://localhost:3000/pedidos", {
-                    method: "POST",  
-                    headers: {"Content-Type" : "application/json"},
-                    body: dadosJson
-                });
+                
+                try {
+                    const dadosJson = JSON.stringify(dadosPedido);
+                    const req = await fetch("http://localhost:3000/pedidos", {
+                        method: "POST",  
+                        headers: {"Content-Type" : "application/json"},
+                        body: dadosJson
+                    });
+
+                    if (req.ok) {
+                        this.mostrarMensagem('sucesso', 'Pedido criado com sucesso!');
+                        
+                        setTimeout(() => {
+                            this.$router.push('/pedidos');
+                        }, 2000);
+                    } else {
+                        this.mostrarMensagem('alerta', 'Erro ao criar pedido. Tente novamente.');
+                    }
+                } catch (error) {
+                    this.mostrarMensagem('alerta', 'Erro de conexão. Verifique sua internet.');
+                }
             }
         },
         mounted(){
