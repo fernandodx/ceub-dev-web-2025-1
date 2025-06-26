@@ -105,7 +105,6 @@ import MessageComponent from './MessageComponent.vue';
             },
             async criarPedido(e) {
                 e.preventDefault();
-                // Validação dos campos obrigatórios
                 if (!this.nomeCliente || !this.pontoCarneSelecionado) {
                   this.messageType = 'alert';
                   this.messageText = 'Preencha o nome e selecione o ponto da carne.';
@@ -135,7 +134,6 @@ import MessageComponent from './MessageComponent.vue';
                     this.showMessage = false; 
                     this.$router.push('/pedidos');
                   }, 2000);
-                  // Limpar campos do formulário
                   this.nomeCliente = '';
                   this.pontoCarneSelecionado = '';
                   this.listaComplementosSelecionados = [];

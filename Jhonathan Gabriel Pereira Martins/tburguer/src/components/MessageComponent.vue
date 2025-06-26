@@ -10,7 +10,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'success', // 'success' ou 'alert'
+      default: 'success',
       validator: value => ['success', 'alert'].includes(value)
     },
     message: {
