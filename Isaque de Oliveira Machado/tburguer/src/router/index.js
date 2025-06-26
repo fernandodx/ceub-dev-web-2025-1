@@ -18,7 +18,12 @@ const routes = [
     path: "/pedidos",
     name: "pedidos",
     component: PedidosView,
-  }  
+  },
+  {
+    path: "/config-pedido",
+    name: "config-pedido",
+    component: ConfiguracaoPedidoView,
+  },
 ];
 
 const router = createRouter({
