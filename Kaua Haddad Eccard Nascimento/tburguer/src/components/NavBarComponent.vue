@@ -2,7 +2,7 @@
     <div>
         <nav id="nav">
             <router-link to="/" id="logo-url">
-                <img src="/img/logo_tburguer.png" id="logo"/>
+                <img src="/img/logo_okami.png" id="logo"/>
             </router-link>
             <router-link to="/menu">Menu</router-link>
             <router-link to="/pedidos">Pedidos</router-link>
@@ -30,7 +30,7 @@
 
     #nav {
         background-color: #333;
-        border-bottom: 3px solid darkgoldenrod;
+        border-bottom: 3px solid white;
         padding: 15px 50px;
         display: flex;
         justify-content: flex-end;
@@ -38,7 +38,7 @@
     }
 
     #nav a {
-        color: darkgoldenrod;
+        color: white;
         text-decoration: none;
         margin: 12px;
         transition: .5s;

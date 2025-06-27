@@ -17,7 +17,7 @@
 #footer {
     height: 80px;
     background: #333;
-    color: gold;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;

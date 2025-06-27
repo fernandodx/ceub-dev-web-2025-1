@@ -16,21 +16,8 @@
                     v-model="nomeCliente"
                     placeholder="Digite seu Nome">
             </div>
-             <div class="inputs">
-                <label for="ponto-carne">Ponto da carne</label>
-
-                <select 
-                    name="ponto-carne" 
-                    id="ponto-carne" 
-                    v-model="pontoCarneSelecionado">
-                    <option value="" selected>Selecione o ponto</option>
-                    <option v-for="pontoCarne in listaPontoCarne" 
-                            :key="pontoCarne.id"
-                            :value="pontoCarne">{{ pontoCarne.descricao }}</option>
-
-                </select>
-            </div>
-            <div id="opcionais-titulo" class="inputs">
+            
+            <div class="inputs">
                 <label id="opcionais-titulo" for="Opcionais">Selecione os opcionais</label>
                 <label id="opcionais-subtitulo" for="Complemento">Adicione um complemento</label>
 
@@ -82,10 +69,8 @@
         data(){
             return {
                 nomeCliente : "",
-                pontoCarneSelecionado: "",
                 listaComplementosSelecionados: [],
                 listaBebidasSelecionadas: [],
-                listaPontoCarne : [],
                 listaComplementos : [],
                 listaBebidas : [],
                 mensagem: {
@@ -99,11 +84,6 @@
             burguer : null
         },
         methods: {
-            async getTipoPontos(){
-                const response = await fetch("http://localhost:3000/tipos_pontos");
-                const data = await response.json();
-                this.listaPontoCarne = data;
-            },
             async getOpcionais() {
                 const response = await fetch("http://localhost:3000/opcionais");
                 const data = await response.json();
@@ -124,11 +104,6 @@
                     return false;
                 }
                 
-                if (!this.pontoCarneSelecionado || !this.pontoCarneSelecionado.descricao) {
-                    this.mostrarMensagem('alerta', 'Por favor, selecione o ponto da carne!');
-                    return false;
-                }
-                
                 return true;
             },
             async criarPedido(e) {
@@ -140,7 +115,6 @@
 
                 const dadosPedido = {
                     nome : this.nomeCliente,
-                    ponto : this.pontoCarneSelecionado,
                     bebida : Array.from(this.listaBebidasSelecionadas),
                     complemento : Array.from(this.listaComplementosSelecionados),
                     statusId: 5,
@@ -170,7 +144,6 @@
             }
         },
         mounted(){
-            this.getTipoPontos();
             this.getOpcionais();
         }
 

@@ -104,7 +104,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 6; /* números de linha para cortar */
+        -webkit-line-clamp: 6; 
         -webkit-box-orient: vertical;
     }
 

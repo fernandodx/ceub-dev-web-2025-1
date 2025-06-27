@@ -1,6 +1,6 @@
 <template>
     <div id="main-banner">
-        <h1>Hamburguer de churrasqueiro</h1>
+        <h1>Ōkāmī 寿司</h1>
     </div>
 </template>
 
@@ -24,7 +24,7 @@
 
     #main-banner h1 {
         font-size: 40px;
-        color: antiquewhite;
+        color: white;
         text-align: center;
         background: #333;
         padding: 25px;

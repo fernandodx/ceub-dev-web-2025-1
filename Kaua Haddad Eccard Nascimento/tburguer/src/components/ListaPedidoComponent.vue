@@ -7,7 +7,6 @@
                         <div id="ordem-id">#ID</div>
                         <div>Nome</div>
                         <div>Hamburguer</div>
-                        <div>Ponto</div>
                         <div>Opcionais</div>
                         <div>Status</div>
                         <div id="div-acoes">Ações</div>
@@ -18,7 +17,6 @@
                 <div id="ordem-numero">{{ pedido.id }}</div>
                 <div>{{ pedido.nome }}</div>
                 <div>{{ pedido.hamburguer.nome }}</div>
-                <div>{{ pedido.ponto.descricao }}</div>
                 <div>
                     <ul>
                         <li v-for="(complemento, index) in pedido.complemento" :key="index" >{{ complemento.nome }}</li>
@@ -194,7 +192,7 @@
         margin-top: 8px;
         margin-bottom: 8px;
         width: 100%;
-        height: px;
+        height: 1px;
         background-color: darkgoldenrod;
     }
 
