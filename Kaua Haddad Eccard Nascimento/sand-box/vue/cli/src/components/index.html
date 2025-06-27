@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Dinâmico com Vue.js</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="app-header">
+            <h1 :style="{ color: headerColor }">{{ headerTitle }}</h1>
+            <p class="subtitle">Formulário que atualiza em tempo real</p>
+        </header>
+
+        <main class="app-main">
+            <section class="form-section">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        v-model="user.name" 
+                        @input="updateHeader"
+                        :class="{ 'input-error': !isNameValid }"
+                    >
+                    <small v-if="!isNameValid" class="error-message">
+                        O nome deve ter pelo menos 3 caracteres
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input 
+                        type="number" 
+                        id="idade" 
+                        v-model.number="user.age"
+                        :style="ageInputStyle"
+                    >
+                    <div class="age-feedback" :style="ageFeedbackStyle">
+                        {{ ageFeedback }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cor-favorita">Cor Favorita:</label>
+                    <input 
+                        type="color" 
+                        id="cor-favorita" 
+                        v-model="user.favoriteColor"
+                        @change="updateTheme"
+                    >
+                    <div 
+                        class="color-preview" 
+                        :style="{ backgroundColor: user.favoriteColor }"
+                    ></div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            v-model="user.newsletter"
+                        > Assinar newsletter
+                    </label>
+                </div>
+            </section>
+
+            <section class="output-section" :style="outputSectionStyle">
+                <h2>Dados em Tempo Real</h2>
+                <pre>{{ userDataPreview }}</pre>
+                <div class="status-indicator" :class="formStatusClass">
+                    Status do Formulário: {{ formStatus }}
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer" :style="footerStyle">
+            <p>Feito com Vue.js por Kauã</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

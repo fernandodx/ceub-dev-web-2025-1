@@ -1,0 +1,244 @@
+{
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [
+    {
+      "nome": "a",
+      "bebida": [
+        {
+          "id": 1,
+          "nome": "Coca Cola Lata 310 ml",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complemento": [
+        {
+          "id": 1,
+          "nome": "wasabi",
+          "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+          "valor": 11,
+          "eh_novidade": true
+        },
+        {
+          "id": 2,
+          "nome": "gengibre",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+          "valor": 7,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 1,
+        "nome": "Combo 1",
+        "foto": "https://fibo.promokit.com.br/images/empresa/86010290-4dd5-11ee-ba01-650ea8abb32f.jpeg",
+        "descricao": "4 jyo salmão e cream cheese, 4 uramaki filadélfia, 4 uramaki skin cream cheese e cebolinha, 4 mini acarajé de salmão. 16 peças",
+        "valor": 38,
+        "eh_novidade": true
+      },
+      "id": 1
+    },
+    {
+      "nome": "kaua",
+      "bebida": [
+        {
+          "id": 1,
+          "nome": "Coca Cola Lata 310 ml",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complemento": [
+        {
+          "id": 1,
+          "nome": "wasabi",
+          "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+          "valor": 11,
+          "eh_novidade": true
+        },
+        {
+          "id": 2,
+          "nome": "gengibre",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+          "valor": 7,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 2,
+        "nome": "Combo Dragon",
+        "foto": "https://fibo.promokit.com.br/images/empresa/de2566f0-4dd5-11ee-92ae-53e51bcccb05.jpeg",
+        "descricao": "5 sashimi de salmão, 5 sashimi de tilápia, 8 uramaki filadélfia, 8 uramaki de skin cream cheese e cebolinha, 8 uramaki de kani cream cheese e cebolinha, 8 uramaki de camarão e cream cheese, 8 hossomaki salmão simples, 4 niguiri de salmão, 6 niguiri de skin, 30 hot filadélfia, 10 isca de tilápia. 100 peças",
+        "valor": 155,
+        "eh_novidade": true
+      },
+      "id": 2
+    }
+  ],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "wasabi",
+        "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+        "valor": 11,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "gengibre",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431455651d7d5fd3661_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Arretado",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1698926982654391866e311_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese especial de alho e ervas, suculento blend de 160 gramas flambado na manteiga de garrafa, coberto de queijo coalho e finalizado com geléia de pimenta Queensberry",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Combo 1",
+        "foto": "https://fibo.promokit.com.br/images/empresa/86010290-4dd5-11ee-ba01-650ea8abb32f.jpeg",
+        "descricao": "4 jyo salmão e cream cheese, 4 uramaki filadélfia, 4 uramaki skin cream cheese e cebolinha, 4 mini acarajé de salmão. 16 peças",
+        "valor": 38,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Combo Dragon",
+        "foto": "https://fibo.promokit.com.br/images/empresa/de2566f0-4dd5-11ee-92ae-53e51bcccb05.jpeg",
+        "descricao": "5 sashimi de salmão, 5 sashimi de tilápia, 8 uramaki filadélfia, 8 uramaki de skin cream cheese e cebolinha, 8 uramaki de kani cream cheese e cebolinha, 8 uramaki de camarão e cream cheese, 8 hossomaki salmão simples, 4 niguiri de salmão, 6 niguiri de skin, 30 hot filadélfia, 10 isca de tilápia. 100 peças",
+        "valor": 155,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Combo 3",
+        "foto": "https://fibo.promokit.com.br/images/empresa/f86b64d0-4dd3-11ee-b722-fd166a9f11af.jpeg",
+        "descricao": "4 uramaki skin cream cheese e cebolinha, 4 uramaki filadélfia, 4 uramaki camarão e cream cheese, 4 jyo salmão e cream cheese, 6 hot filadélfia, 5 camarão empanado. 27 peças",
+        "valor": 49,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Combo 4",
+        "foto": "https://fibo.promokit.com.br/images/empresa/0c79b660-4dd5-11ee-bd5d-495710c84ba3.jpeg",
+        "descricao": "16 Uramaki Filadélfia, 8 Uramaki de Camarão e Cream Cheese, 24 Hot Filadélfia e 10 Camarão Empanados. 58 peças",
+        "valor": 99,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Combo 5",
+        "foto": "https://fibo.promokit.com.br/images/empresa/66ed0940-4dd4-11ee-90a2-df556c1ca27a.jpeg",
+        "descricao": "8 Uramaki Filadelfia, 8 Uramaki Skin, 8 Uramaki Kani, 6 Hot Filadelfia, 12 Hot Skin, 4 Acarajé de salmão e 4 Jyo de goiabada. 50 peças",
+        "valor": 69,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Combo 6",
+        "foto": "https://fibo.promokit.com.br/images/empresa/85a59190-4dd4-11ee-b454-df6f3dcce748.jpeg",
+        "descricao": "24 Uramaki filadélfia, 18 hot filadélfia, 8 uramaki de skin cream cheese e cebolinha. 50 peças",
+        "valor": 79,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Combo 7",
+        "foto": "https://fibo.promokit.com.br/images/empresa/85a59190-4dd4-11ee-b454-df6f3dcce748.jpeg",
+        "descricao": "8 Uramaki Filadelfia, 8 Uramaki Skin, 8 Uramaki Kani, 6 Hot Filadelfia, 12 Hot Skin, 4 Acarajé de salmão e 4 Jyo de goiabada. 50 peças",
+        "valor": 69,
+        "eh_novidade": true
+      },
+      {
+        "id": 8,
+        "nome": "Combo Black",
+        "foto": "https://fibo.promokit.com.br/images/empresa/baaee720-57f6-11ee-ac75-6f77107bad49.jpeg",
+        "descricao": "5 sashimi de salmão, 5 sashimi de tilápia, 16 uramaki filadelfia, 8 uramaki de skin cream cheese e cebolinha, 8 uramaki de kani cream cheese e cebolinha, 8 jyo de salmão e cream cheese, 30 hot filadelfia, 10 camarão empanado, 10 isca de peixe branco. 100 peças",
+        "valor": 199,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
