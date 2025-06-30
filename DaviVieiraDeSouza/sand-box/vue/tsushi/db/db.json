@@ -1,0 +1,171 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Ao ponto"
+    },
+    {
+      "id": 2,
+      "descricao": "Bem passada"
+    },
+    {
+      "id": 3,
+      "descricao": "Mal passada"
+    },
+    {
+      "id": 4,
+      "descricao": "Peixe morreu em vão"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Sunomono",
+        "descricao": "Salada agridoce de pepino com gergelim e molho de vinagre de arroz.",
+        "foto": "https://sabores-new.s3.amazonaws.com/public/2024/11/salada-sunomono-1024x494.jpg",
+        "valor": 10,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Guioza",
+        "descricao": "Pastelzinho japonês recheado com carne suína e vegetais, levemente grelhado.",
+        "foto": "https://djapa.com.br/wp-content/uploads/2020/07/guioza.jpg",
+        "valor": 14,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Refrigerante Ramune (Sabor Uva)",
+        "descricao": "Bebida gaseificada japonesa com sabor de uva e embalagem tradicional com bolinha de vidro.",
+        "foto": "https://2519.cdn.simplo7.net/static/2519/sku/bebidas-refrigerante-japones-ramune-sabor-uva-sangaria-500ml-1686941072966.jpg",
+        "valor": 12,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Chá Verde Gelado",
+        "descricao": "Chá verde japonês natural, sem açúcar, servido gelado.",
+        "foto": "https://2519.cdn.simplo7.net/static/2519/sku/alimentos-bomboniere-bebida-adocicada-pronta-cha-verde-master-kong-green-tea-500ml-1621621553842.jpg",
+        "valor": 8,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Calpis (Yakult Japonês)",
+        "descricao": "Bebida japonesa fermentada com sabor levemente adocicado e ácido.",
+        "foto": "https://2519.cdn.simplo7.net/static/2519/sku/bebidas-sucos-bebida-japonesa-calpis-100ml-1496931593906.jpg",
+        "valor": 10,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Suco de Lichia",
+        "descricao": "Suco refrescante de lichia, muito popular em restaurantes orientais.",
+        "foto": "https://2519.cdn.simplo7.net/static/2519/sku/bebidas-sucos-e-refrescos-suco-de-lichia-chin-chin-320ml--p-1631206099306.jpg",
+        "valor": 9,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 8,
+        "nome": "Udon com Tempurá",
+        "foto": "hhttps://howdaily.com/wp-content/uploads/2017/09/japanese-tempura-udon-640x960.jpg",
+        "descricao": "Massa japonesa espessa servida em caldo quente com camarões empanados crocantes (tempurá).",
+        "valor": 28,
+        "eh_novidade": false
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Combo Especial",
+        "foto": "https://thumb-cdn.soluall.net/prod/shp_products/sp1280fw/62c5a350-fec4-450d-b84c-40bdac1e09ff/62c5a350-4368-4aa5-b723-40bdac1e09ff.png",
+        "descricao": "Combo com 32 peças incluindo sashimis, uramakis, niguiris e hots. Ideal para duas pessoas.",
+        "valor": 59,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Sashimi Salmão",
+        "foto": "https://images.tcdn.com.br/img/img_prod/842178/salmao_fresco_fatiado_tipo_sashimi_77_1_20200903170409.jpg",
+        "descricao": "Fatias finas de salmão fresco servidas com molho shoyu e wasabi.",
+        "valor": 35,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Uramaki Califórnia",
+        "foto": "https://garden.chefware.com.br/18/1599/0/uramaki-california-pepino-manga-e-kani.jpg",
+        "descricao": "Enrolado invertido com arroz por fora, recheado com kani, pepino e manga.",
+        "valor": 28,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Hot Roll",
+        "foto": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/04/14/1092447933-sushi-vegano.jpg",
+        "descricao": "Rolinho empanado e frito com recheio de salmão e cream cheese.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Niguiri Salmão",
+        "foto": "https://garden.chefware.com.br/44/1599/0/niguiri-salmao-4-unidades.jpg",
+        "descricao": "Bolinhos de arroz cobertos com fatia de salmão fresco.",
+        "valor": 24,
+        "eh_novidade": false
+      },
+      {
+        "id": 6,
+        "nome": "Temaki Salmão",
+        "foto": "https://kikkoman.com.br/kikkomanbrasil/dist/img/destaque/receitas/temaki-salmao.jpg",
+        "descricao": "Cone de alga recheado com arroz temperado, salmão fresco e cream cheese.",
+        "valor": 22,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Yakissoba de Frango",
+        "foto": "https://speedy.uenicdn.com/662d8df8-9671-49b0-a866-c38a6d595b95/c528_a/image/upload/v1611766965/business/5ce954b0374842beb3e549f862f0c143.jpg",
+        "descricao": "Macarrão oriental salteado com frango, legumes frescos e molho shoyu especial.",
+        "valor": 32,
+        "eh_novidade": false
+      }
+    ]
+  }
+}
