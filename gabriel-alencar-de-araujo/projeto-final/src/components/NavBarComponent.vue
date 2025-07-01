@@ -2,7 +2,7 @@
     <div>
         <nav id="nav">
             <router-link to="/" id="logo-url">
-                <img src="/img/logo_tburguer.png" id="logo"/>
+                <img src="https://imgs.search.brave.com/ACgtthpHw-pnEZPgAOVoj3lapJng2Ii1Kuw-RzZF_T0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy13b3JsZC5uZXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MTAvUGl6emEtSHV0/LUxvZ28tNzAweDM5/NC5wbmc" id="logo"/>
             </router-link>
             <router-link to="/menu">Cardápio</router-link>
             <router-link to="/pedidos">Pedidos</router-link>
