@@ -1,0 +1,179 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Fina e crocante"
+    },
+    {
+      "id": 2,
+      "descricao": "Tradicional"
+    },
+    {
+      "id": 3,
+      "descricao": "Grande e recheada"
+    },
+    {
+      "id": 4,
+      "descricao": "Sem borda"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em preparação"
+    },
+    {
+      "id": 3,
+      "descricao": "No forno"
+    },
+    {
+      "id": 4,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Entregue"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Batata",
+        "descricao": "Batata frita crocante + bebida de sua escolha",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 15,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Batata frita crocante",
+        "descricao": "Batata frita temperada com sal e pimenta",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 12,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Pão de alho",
+        "descricao": "Pão de alho caseiro",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 8,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 350ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Suco Natural Laranja 300ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 8,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Água com Gás 500ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 5,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Refrigerante Guaraná 350ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 6,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Pizza Especial da Casa",
+        "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=150&h=150&fit=crop",
+        "descricao": "Molho de tomate, mussarela, presunto, ovos, cebola, azeitonas e orégano",
+        "valor": 45,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Pizza 4 Queijos",
+        "foto": "https://cache.dominos.com/wam/prod/market/BR/_pt/images/promo/33a7aa32-ba4e-41f6-acab-0fb189e2b325.jpg",
+        "descricao": "Pizza 4 queijos. Deliciosa pizza 4 queijos com queijo, requeijão, oregano e parmesão ralado..",
+        "valor": 70,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Pizza Calabresa",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZCLB.jpg",
+        "descricao": "Pizza Calabresa.Deliciosa pizza com queijo e calabresa.",
+        "valor": 77,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Pizza de queijo",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZMUS.jpg",
+        "descricao": "Pizza de queijo.Deliciosa pizza com queijo.",
+        "valor": 70,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Pizza Margherita",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZMG.jpg",
+        "descricao": "Pizza de margherita.Deliciosa pizza com mussarela, majericão e tomate.",
+        "valor": 77,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Pizza de Pepperoni",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZPEP.jpg",
+        "descricao": "Pizza de pepperoni.Deliciosa pizza com embutipo,tomate e queijo mussarela.",
+        "valor": 77,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Pizza de Frango com Requeijão Especial",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZFR.jpg",
+        "descricao": "Pizza de Frango com Requeijão Especial.Deliciosa Pizza com queijo, frango, requeijao.",
+        "valor": 95,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Pizza Queijo Cremoso",
+        "foto": "https://cache.dominos.com/wam/prod/market/BR/_pt/images/promo/0b12b27f-5fc0-42c1-8f8e-a9420a9ab419.jpg",
+        "descricao": "Pizza Queijo Cremoso.Deliciosa pizza com queijo, creme de milho.",
+        "valor": 77,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
