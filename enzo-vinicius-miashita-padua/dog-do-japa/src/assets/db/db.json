@@ -1,0 +1,167 @@
+{
+  "tipos_salsicha": [
+    {
+      "id": 1,
+      "descricao": "Vina"
+    },
+    {
+      "id": 2,
+      "descricao": "Bratwurst"
+    },
+    {
+      "id": 3,
+      "descricao": "Salsicha de frango"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em preparação"
+    },
+    {
+      "id": 3,
+      "descricao": "Saiu para entrega"
+    },
+    {
+      "id": 4,
+      "descricao": "Concluído"
+    },
+    {
+      "id": 5,
+      "descricao": "Cancelado"
+    },
+    {
+      "id": 6,
+      "descricao": "Confirmado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Batata Frita Turbinada",
+        "descricao": "Batata frita crocante com cheddar e bacon",
+        "foto": "https://www.newbraz.com.br/assets/img/site/receitas/650/MC4wNjE1NzgwMDE3MzQ3NDIwNTg3MjcyNjc4MTQ.jpg",
+        "valor": 18,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Anéis de Cebola",
+        "descricao": "Porção de anéis de cebola empanados",
+        "foto": "https://guiadacozinha.com.br/wp-content/uploads/2018/05/aneldecebola.webp",
+        "valor": 12,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca-Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://covabra.vtexassets.com/arquivos/ids/309466/64337.jpg?v=638853858218370000",
+        "valor": 7,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Sprite Lata 310 ml",
+        "descricao": "",
+        "foto": "https://www.bernardaoemcasa.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/w/h/whatsapp_image_2024-08-13_at_13.15.05.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Fanta Laranja Lata 310 ml",
+        "descricao": "",
+        "foto": "https://paguemenos.vtexassets.com/arquivos/ids/852687/refrigerante-fanta-laranja-lata-310ml-principal.jpg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Suco Natural de Laranja 300 ml",
+        "descricao": "Suco fresco de laranja",
+        "foto": "https://ibassets.com.br/ib.item.image.large/l-4139945d789d40a98fd915e033c2190a.jpeg",
+        "valor": 9,
+        "eh_novidade": true
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Explosão de Queijo",
+        "foto": "http://localhost:8080/img/produto1.png",
+        "descricao": "Duas salsichas especiais com uma cascata de queijo muçarela, cheddar e provolone derretidos, acompanhado de cebola crispy e molho barbecue defumado.",
+        "valor": 42,
+        "eh_novidade": true
+      }
+    ],
+    "hot_dogs": [
+      {
+        "id": 1,
+        "nome": "Clássico Americano",
+        "foto": "http://localhost:8080/img/produto2.png",
+        "descricao": "Pão de hot dog tradicional com salsicha Vina, mostarda amarela, ketchup e picles em cubos.",
+        "valor": 25,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Mexicano Picante",
+        "foto": "http://localhost:8080/img/produto3.png",
+        "descricao": "Pão macio com salsicha de frango, molho chilli caseiro, queijo prato ralado, jalapeños fatiados e coentro fresco.",
+        "valor": 28,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Rei do Molho Branco",
+        "foto": "http://localhost:8080/img/produto4.png",
+        "descricao": "Pão de hot dog com salsicha Bratwurst, molho bechamel cremoso, cogumelos salteados e finalizado com batata palha.",
+        "valor": 30,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Vegetariano Gourmet",
+        "foto": "http://localhost:8080/img/produto5.png",
+        "descricao": "Pão integral com salsicha vegetariana, rúcula, tomate cereja, pesto de manjericão e queijo minas frescal.",
+        "valor": 27,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Dogão do Chef",
+        "foto": "http://localhost:8080/img/produto6.png",
+        "descricao": "Pão brioche, duas salsichas Vina, purê de batata, vinagrete, milho, ervilha, batata palha e maionese da casa.",
+        "valor": 33,
+        "eh_novidade": false
+      },
+      {
+        "id": 6,
+        "nome": "Alemão Autêntico",
+        "foto": "http://localhost:8080/img/produto7.png",
+        "descricao": "Pão de centeio, salsicha Bratwurst, chucrute, mostarda escura e cebola roxa caramelizada.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Kids Dog",
+        "foto": "http://localhost:8080/img/produto8.png",
+        "descricao": "Mini pão de hot dog com mini salsicha e ketchup. Simples e delicioso para a criançada!",
+        "valor": 18,
+        "eh_novidade": false
+      }
+    ]
+  }
+}
