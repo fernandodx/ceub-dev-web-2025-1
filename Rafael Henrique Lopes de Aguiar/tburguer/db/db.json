@@ -1,0 +1,155 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Massa fina"
+    },
+    {
+      "id": 2,
+      "descricao": "Massa média"
+    },
+    {
+      "id": 3,
+      "descricao": "Massa grossa"
+    },
+    {
+      "id": 4,
+      "descricao": "Borda recheada"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Molho extra",
+        "descricao": "Molho de tomate artesanal para acompanhar sua pizza.",
+        "foto": "https://img.freepik.com/fotos-gratis/molho-de-tomate-caseiro-em-uma-tigela_123827-21421.jpg",
+        "valor": 3,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Borda recheada",
+        "descricao": "Borda da pizza recheada com catupiry.",
+        "foto": "https://img.freepik.com/fotos-gratis/pizza-de-calabresa-com-borda-recheada_123827-21422.jpg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Refrigerante Lata 350 ml",
+        "descricao": "",
+        "foto": "https://img.freepik.com/fotos-gratis/lata-de-refrigerante_123827-21423.jpg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Suco Natural 300 ml",
+        "descricao": "",
+        "foto": "https://img.freepik.com/fotos-gratis/suco-natural_123827-21424.jpg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Pizza Margherita",
+        "foto": "https://www.donguilherme.com.br/assets/userfiles/archives/6405dff0d4d8d.jpg",
+        "descricao": "Molho de tomate, mussarela, tomate e manjericão.",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Pizza Calabresa",
+        "foto": "https://blog.novasafra.com.br/wp-content/uploads/2016/01/accb7d_37d37d9f1001e88384dafc6e5cc60c4f.jpg_1024.jpg",
+        "descricao": "Molho de tomate, mussarela, calabresa e cebola.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Pizza Quatro Queijos",
+        "foto": "https://redefoodservice.com.br/wp-content/uploads/2023/07/Pizza-Quatro-Queijos.jpg",
+        "descricao": "Molho de tomate, mussarela, provolone, parmesão e gorgonzola.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Pizza Portuguesa",
+        "foto": "https://alegrafoods.com.br/wp-content/uploads/2020/07/pizza-portuguesa-grande.jpg",
+        "descricao": "Molho de tomate, mussarela, presunto, ovo, cebola e azeitona.",
+        "valor": 32,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Pizza Frango com Catupiry",
+        "foto": "https://www.receitasnestle.com.br/sites/default/files/srh_recipes/86f7100c92218a97fac8e3bbd18ed787.jpg",
+        "descricao": "Molho de tomate, mussarela, frango desfiado e catupiry.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Pizza Pepperoni",
+        "foto": "https://www.cobsbread.com/us/wp-content//uploads/2022/09/Pepperoni-pizza-850x630-1.png",
+        "descricao": "Molho de tomate, mussarela e pepperoni.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Pizza Vegetariana",
+        "foto": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-vegetariana-00.jpeg",
+        "descricao": "Molho de tomate, mussarela, pimentão, cebola, tomate e azeitona.",
+        "valor": 20,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Pizza Chocolate",
+        "foto": "https://s2-receitas.glbimg.com/YacK9Sp4MTG3CGZAHdeKGnbGSFk=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/K/Y/FxiVXpRfePdyZnSeHpKQ/pizza-de-chocolate-com-morango.jpg",
+        "descricao": "Pizza doce com creme de chocolate e morango.",
+        "valor": 15,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
