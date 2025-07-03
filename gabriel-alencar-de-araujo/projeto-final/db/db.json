@@ -1,0 +1,179 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Fina e crocante"
+    },
+    {
+      "id": 2,
+      "descricao": "Tradicional"
+    },
+    {
+      "id": 3,
+      "descricao": "Grande e recheada"
+    },
+    {
+      "id": 4,
+      "descricao": "Sem borda"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em preparação"
+    },
+    {
+      "id": 3,
+      "descricao": "No forno"
+    },
+    {
+      "id": 4,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Entregue"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Batata",
+        "descricao": "Batata frita crocante + bebida de sua escolha",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 15,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Batata frita crocante",
+        "descricao": "Batata frita temperada com sal e pimenta",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 12,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Pão de alho",
+        "descricao": "Pão de alho caseiro",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 8,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 350ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Suco Natural Laranja 300ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 8,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Água com Gás 500ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 5,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Refrigerante Guaraná 350ml",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=150&h=150&fit=crop",
+        "valor": 6,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Pizza Especial da Casa",
+        "foto": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=150&h=150&fit=crop",
+        "descricao": "Molho de tomate, mussarela, presunto, ovos, cebola, azeitonas e orégano",
+        "valor": 45,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Margherita",
+        "foto": "https://imgs.search.brave.com/r_IiPNPWoUmEPeBbfPvSVH8Fl06_TFkuZ0BOZujR4L4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvMzY1/Njc0MTMvc3RvY2st/cGhvdG8tcGl6emE",
+        "descricao": "Molho de tomate, mussarela fresca, manjericão e azeite de oliva",
+        "valor": 35,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Pepperoni",
+        "foto": "https://imgs.search.brave.com/d40xeM6rDxQYQPjOmfEn0l8m56T9nWTtJYBRxWuCJK8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wZXBw/ZXJvbmktcGl6emEt/c3RpbGwtbGlmZS1j/bG9zZS11cC10b3At/NzM5MDc5NjcuanBn",
+        "descricao": "Molho de tomate, mussarela e pepperoni",
+        "valor": 42,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Quatro Queijos",
+        "foto": "https://imgs.search.brave.com/def81ECdb5CdAgyBZaSEctwfZTI9xC_4tZaCimDywhM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9waXp6YS1kZS1x/dWF0cm8tcXVlaWpv/cy1jb20tcXVlaWpv/LWRlLW1vbGRlLWF6/dWwtcXVlaWpvLWRl/LWNhYnJhLW1venph/cmVsYS1lLXBhcm1l/c2FvXzE2MjY5NS00/OTI4MC5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQw",
+        "descricao": "Molho de tomate, mussarela, parmesão, provolone e gorgonzola",
+        "valor": 48,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Calabresa",
+        "foto": "https://imgs.search.brave.com/2M-3alHkDSVl1hNYIgNzVj7XB9iHZwITk6ifncUJNeY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS92aXN0YS1kZS1h/bHRvLWFuZ3Vsby1k/ZS1tb3Jhbmdvc18x/MDQ4OTQ0LTIxMDUx/MzY5LmpwZz9zZW10/PWFpc19oeWJyaWQm/dz03NDA",
+        "descricao": "Molho de tomate, mussarela, calabresa e cebola",
+        "valor": 38,
+        "eh_novidade": false
+      },
+      {
+        "id": 5,
+        "nome": "Frango com Catupiry",
+        "foto": "https://imgs.search.brave.com/rPOBF9IGzliZJyhoczemsHglMkuh_wtuGhlrlaD6kSA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdDMu/ZGVwb3NpdHBob3Rv/cy5jb20vMzYwMDMx/OTQvMzcyNzEvaS80/NTAvZGVwb3NpdHBo/b3Rvc18zNzI3MTUy/OTQtc3RvY2stcGhv/dG8tY3V0dGluZy1j/aGlja2VuLXBpenph/LWNhdHVwaXJ5LWNo/ZWVzZS5qcGc",
+        "descricao": "Molho de tomate, mussarela, frango desfiado e catupiry",
+        "valor": 40,
+        "eh_novidade": false
+      },
+      {
+        "id": 6,
+        "nome": "Portuguesa",
+        "foto": "https://imgs.search.brave.com/s3WvyBVYmNhiBemeZwvS6GWK1kwz2XyanNt3iwrO-n8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wYWVz/bm92b3Jpby5jb20u/YnIvd2ViL2ltYWdl/L3Byb2R1Y3QucHJv/ZHVjdC8xMzk0L2lt/YWdlXzEwMjQvWzEz/NjFdJTIwUGl6emEl/MjBQb3J0dWd1ZXNh/JTIwLSUyMDM1Y20_/dW5pcXVlPTQ0Mjlj/NmE",
+        "descricao": "Molho de tomate, mussarela, presunto, ovos, cebola e azeitonas",
+        "valor": 42,
+        "eh_novidade": false
+      },
+      {
+        "id": 7,
+        "nome": "Vegetariana",
+        "foto": "https://imgs.search.brave.com/w2MBp7RTJXdYUQu12ZSsFtOqxc4SdeYzcXVtaDfRM3w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3VhcmRpbmkuY29t/L21lZGlhL3pvby9p/bWFnZXMvcGl6emFf/c2V0XzIwMjFfZnVs/bF85ZDIxOTk5ODA1/YjIxY2NiMmY1MzA4/Njk2ODllY2U3My5q/cGc",
+        "descricao": "Molho de tomate, mussarela, tomate, cebola, pimentão e champignon",
+        "valor": 36,
+        "eh_novidade": false
+      }
+    ]
+  }
+}
