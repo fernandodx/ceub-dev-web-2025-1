@@ -1,0 +1,131 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Peixe cru"
+    },
+    {
+      "id": 2,
+      "descricao": "Levemente selado"
+    },
+    {
+      "id": 3,
+      "descricao": "Grelhado"
+    },
+    {
+      "id": 4,
+      "descricao": "Vegetariano"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Aguardando preparo"
+    },
+    {
+      "id": 2,
+      "descricao": "Preparando"
+    },
+    {
+      "id": 3,
+      "descricao": "Saiu para entrega"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Cancelado"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido finalizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Gengibre em conserva",
+        "descricao": "Tradicional gengibre agridoce japonês",
+        "foto": "https://cdn.pixabay.com/photo/2018/06/08/13/27/ginger-3462317_1280.jpg",
+        "valor": 3,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Wasabi extra",
+        "descricao": "Porção extra do clássico condimento picante",
+        "foto": "https://cdn.pixabay.com/photo/2023/08/02/07/47/wasabi-8164637_960_720.jpg",
+        "valor": 2,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Chá Verde Gelado",
+        "descricao": "Bebida tradicional japonesa com leve amargor",
+        "foto": "https://cdn.pixabay.com/photo/2016/11/29/13/04/tea-1869716_1280.jpg",
+        "valor": 6,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Sake Doso 200ml",
+        "descricao": "Sake japonês suave",
+        "foto": "https://cdn.pixabay.com/photo/2021/07/14/02/45/liquor-6464933_960_720.jpg",
+        "valor": 12,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Combo Especial 12 Peças",
+        "foto": "https://cdn.pixabay.com/photo/2020/01/06/19/31/japanese-sushi-4746059_1280.jpg",
+        "descricao": "Combinado com 4 niguiris, 4 uramakis e 4 hossomakis",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Sashimi Salmão 10un",
+        "foto": "https://cdn.pixabay.com/photo/2018/08/28/11/28/salmon-times-3637245_1280.jpg",
+        "descricao": "Fatias de salmão fresco selecionado",
+        "valor": 28,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Temaki de Atum",
+        "foto": "https://cdn.pixabay.com/photo/2022/05/12/17/23/temaki-7191920_1280.jpg",
+        "descricao": "Cone de alga recheado com arroz, atum fresco e cebolinha",
+        "valor": 25,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Uramaki Califórnia",
+        "foto": "https://cdn.pixabay.com/photo/2018/10/11/15/41/sushi-3740054_1280.jpg",
+        "descricao": "Rolinho com manga, pepino, kani e arroz",
+        "valor": 22,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Combinado Vegano",
+        "foto": "https://cdn.pixabay.com/photo/2019/08/07/10/32/sushi-4390516_1280.jpg",
+        "descricao": "Peças variadas com legumes, tofu e cogumelos",
+        "valor": 30,
+        "eh_novidade": true
+      }
+    ]
+  }
+}

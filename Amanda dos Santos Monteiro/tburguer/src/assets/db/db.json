@@ -1,0 +1,221 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Carne ao ponto"
+    },
+    {
+      "id": 2,
+      "descricao": "Carne bem passada"
+    },
+    {
+      "id": 3,
+      "descricao": "Carne mal passada"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [
+    {
+      "nome": "Fernando",
+      "ponto": {
+        "id": 1,
+        "descricao": "Carne ao ponto"
+      },
+      "bebidas": [
+        {
+          "id": 1,
+          "nome": "Coca Cola Lata 310 ml",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complementos": [
+        {
+          "id": 1,
+          "nome": "Combo Bebida + Nachos",
+          "descricao": "Nachos crocantes com queijo derretido e guacamole + bebida de sua escolha",
+          "foto": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400",
+          "valor": 11,
+          "eh_novidade": true
+        }
+      ],
+      "statusId": 6,
+      "hamburguer": {
+        "id": 1,
+        "nome": "Taco al Pastor",
+        "foto": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+        "descricao": "Tortilla de milho fresca, carne de porco marinada em achiote e especiarias, grelhada no trompo vertical, servida com cebola, coentro e abacaxi grelhado.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 2
+    }
+  ],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Nachos",
+        "descricao": "Nachos crocantes com queijo derretido e guacamole + bebida de sua escolha",
+        "foto": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400",
+        "valor": 11,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Nachos con Queso y Guacamole",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400",
+        "valor": 7,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Guacamole Fresco",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+        "valor": 5,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431455651d7d5fd3661_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      },
+      {
+        "id": 5,
+        "nome": "Margarita Tradicional",
+        "descricao": "",
+        "foto": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400",
+        "valor": 12,
+        "eh_novidade": true
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Taco Especial del Chef",
+        "foto": "https://images.unsplash.com/photo-1599974579688-8dbcc335180f?w=400",
+        "descricao": "Tortilla de milho artesanal, carne bovina premium grelhada na chapa, cebola caramelizada, queijo Oaxaca derretido, salsa verde e creme azedo fresco",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Taco al Pastor",
+        "foto": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+        "descricao": "Tortilla de milho fresca, carne de porco marinada em achiote e especiarias, grelhada no trompo vertical, servida com cebola, coentro e abacaxi grelhado.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Taco de Nopales",
+        "foto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400",
+        "descricao": "Tortilla de milho integral, nopales (palma) grelhados, feijão preto refogado, queijo fresco, salsa pico de gallo e creme de chipotle.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Taco de Pollo",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg",
+        "descricao": "Tortilla de milho fresca, frango grelhado com especiarias mexicanas, cebola roxa, queijo derretido e salsa verde.",
+        "valor": 32,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Taco de Carnitas",
+        "foto": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+        "descricao": "Tortilla de milho fresca, carne de porco confitada e temperada, cebola caramelizada, queijo derretido e salsa roja.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Taco Mixto",
+        "foto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400",
+        "descricao": "Duas tortillas de milho frescas, carne bovina e frango grelhados, queijo derretido, guacamole e salsa fresca.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Taco de Carne Apimentada",
+        "foto": "https://canaldareceita.com.br/wp-content/uploads/2025/03/Tacos-1200x900.jpg",
+        "descricao": "Tortilla de milho fresca, carne bovina grelhada na brasa, queijo derretido, pimenta e salsa fresca.",
+        "valor": 20,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Taco de Pescado",
+        "foto": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400",
+        "descricao": "Tortilla de milho fresca, peixe grelhado com limão e ervas, repolho roxo, creme azedo e salsa verde.",
+        "valor": 15,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
