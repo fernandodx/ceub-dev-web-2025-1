@@ -1,0 +1,28 @@
+{
+  "pedidos": [
+    {
+      "id": "de3c",
+      "nome": "José Guilherme ",
+      "tipoMassa": "Tradicional",
+      "tamanho": "Pequena",
+      "sabor": "Calabresa",
+      "status": "Entregue"
+    },
+    {
+      "id": "4e01",
+      "nome": "Matheus",
+      "tipoMassa": "Tradicional",
+      "tamanho": "Pequena",
+      "sabor": "Calabresa",
+      "status": "Em preparo"
+    },
+    {
+      "id": "0e3b",
+      "nome": "Maria Luana",
+      "tipoMassa": "Integral",
+      "tamanho": "Grande",
+      "sabor": "Margherita",
+      "status": "Entregue"
+    }
+  ]
+}
