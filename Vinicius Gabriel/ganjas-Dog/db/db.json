@@ -1,0 +1,297 @@
+{
+  "tipos_salsicha": [
+    {
+      "id": 1,
+      "descricao": "Na chapa"
+    },
+    {
+      "id": 2,
+      "descricao": "Ao molho"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Brigadeiro",
+        "descricao": "brigadeiro extra big delicioso",
+        "foto": "https://i.ibb.co/Z1zvFh3r/brigadeirococa.jpg",
+        "valor": 15,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "batata-chips",
+        "descricao": "baldinho com batatas chips bem crocrantes",
+        "foto": "https://i.ibb.co/tpR8g7dC/brigadeiros.jpg",
+        "valor": 8,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Guaraná antarctica Lata 310 ml",
+        "descricao": "",
+        "foto": "https://i.ibb.co/Rkfc6hw9/guarana.jpg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      },
+      {
+        "id": 5,
+        "nome": "Fanta-Uva Lata 310ml",
+        "valor": 12
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {}
+    ],
+    "hot_dogs": [
+      {
+        "id": 1,
+        "nome": "Duplo raio-y",
+        "foto": "https://i.ibb.co/BJ5pFX1/duplo-raio-y.jpg",
+        "descricao": "Esse cachorro quente vai te fazer pintar a privada.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Êta fome do cão",
+        "foto": "https://i.ibb.co/YB715DyL/cachorro-quente.jpg",
+        "descricao": "Quaaatro salsichas junto com muuuito queijo, bacon, batata frita, e bastante maionese de bacon, vem com ingredientes tradicionais",
+        "valor": 40,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Vegano picantiiii",
+        "foto": "https://i.ibb.co/TMkYzwmz/hotdog-company-700x700.jpg",
+        "descricao": "Salsicha vegana de soja e pimenta de cheiro junto com jalapeno",
+        "valor": 35
+      }
+    ]
+  },
+  "pedidos": [
+    {
+      "nome": "cheguei atrasado hoje",
+      "salsicha": {
+        "id": 2,
+        "descricao": "Ao molho"
+      },
+      "bebidas": [
+        {
+          "id": 3,
+          "nome": "Guaraná antarctica Lata 310 ml",
+          "descricao": "",
+          "foto": "https://i.ibb.co/Rkfc6hw9/guarana.jpg",
+          "valor": 6,
+          "eh_novidade": false
+        },
+        {
+          "id": 2,
+          "nome": "Shweppes Citrus 310 ml",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complemento": [
+        {
+          "id": 2,
+          "nome": "batata-chips",
+          "descricao": "baldinho com batatas chips bem crocrantes",
+          "foto": "https://i.ibb.co/tpR8g7dC/brigadeiros.jpg",
+          "valor": 8,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 5,
+      "hotDog": {
+        "id": 1,
+        "nome": "Duplo raio-y",
+        "foto": "https://i.ibb.co/BJ5pFX1/duplo-raio-y.jpg",
+        "descricao": "Esse cachorro quente vai te fazer pintar a privada.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 1
+    },
+    {
+      "nome": "jota",
+      "salsicha": {
+        "id": 1,
+        "descricao": "Na chapa"
+      },
+      "bebidas": [
+        {
+          "id": 5,
+          "nome": "Fanta-Uva Lata 310ml",
+          "valor": 12
+        }
+      ],
+      "complemento": [
+        {
+          "id": 2,
+          "nome": "batata-chips",
+          "descricao": "baldinho com batatas chips bem crocrantes",
+          "foto": "https://i.ibb.co/tpR8g7dC/brigadeiros.jpg",
+          "valor": 8,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 5,
+      "hotDog": {
+        "id": 1,
+        "nome": "Duplo raio-y",
+        "foto": "https://i.ibb.co/BJ5pFX1/duplo-raio-y.jpg",
+        "descricao": "Esse cachorro quente vai te fazer pintar a privada.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 2
+    },
+    {
+      "nome": "cheguei atrasado hoje",
+      "salsicha": {
+        "id": 1,
+        "descricao": "Na chapa"
+      },
+      "bebidas": [
+        {
+          "id": 1,
+          "nome": "Coca Cola Lata 310 ml",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+          "valor": 6,
+          "eh_novidade": false
+        },
+        {
+          "id": 3,
+          "nome": "Guaraná antarctica Lata 310 ml",
+          "descricao": "",
+          "foto": "https://i.ibb.co/Rkfc6hw9/guarana.jpg",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complemento": [
+        {
+          "id": 1,
+          "nome": "Brigadeiro",
+          "descricao": "brigadeiro extra big delicioso",
+          "foto": "https://i.ibb.co/Z1zvFh3r/brigadeirococa.jpg",
+          "valor": 15,
+          "eh_novidade": true
+        },
+        {
+          "id": 2,
+          "nome": "batata-chips",
+          "descricao": "baldinho com batatas chips bem crocrantes",
+          "foto": "https://i.ibb.co/tpR8g7dC/brigadeiros.jpg",
+          "valor": 8,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 5,
+      "hotDog": {
+        "id": 3,
+        "nome": "Vegano picantiiii",
+        "foto": "https://i.ibb.co/TMkYzwmz/hotdog-company-700x700.jpg",
+        "descricao": "Salsicha vegana de soja e pimenta de cheiro junto com jalapeno",
+        "valor": 35
+      },
+      "id": 3
+    },
+    {
+      "nome": "lusca",
+      "salsicha": {
+        "id": 1,
+        "descricao": "Na chapa"
+      },
+      "bebidas": [
+        {
+          "id": 1,
+          "nome": "Coca Cola Lata 310 ml",
+          "descricao": "",
+          "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+          "valor": 6,
+          "eh_novidade": false
+        }
+      ],
+      "complemento": [
+        {
+          "id": 2,
+          "nome": "batata-chips",
+          "descricao": "baldinho com batatas chips bem crocrantes",
+          "foto": "https://i.ibb.co/tpR8g7dC/brigadeiros.jpg",
+          "valor": 8,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 5,
+      "hotDog": {
+        "id": 2,
+        "nome": "Êta fome do cão",
+        "foto": "https://i.ibb.co/YB715DyL/cachorro-quente.jpg",
+        "descricao": "Quaaatro salsichas junto com muuuito queijo, bacon, batata frita, e bastante maionese de bacon, vem com ingredientes tradicionais",
+        "valor": 40,
+        "eh_novidade": true
+      },
+      "id": 4
+    }
+  ]
+}
