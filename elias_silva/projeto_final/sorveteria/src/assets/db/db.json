@@ -1,0 +1,207 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Copo"
+    },
+    {
+      "id": 2,
+      "descricao": "Casquinha"
+    },
+    {
+      "id": 3,
+      "descricao": "Cascão"
+    },
+    {
+      "id": 4,
+      "descricao": "Pote 1L"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Recebido"
+    },
+    {
+      "id": 2,
+      "descricao": "Preparando"
+    },
+    {
+      "id": 3,
+      "descricao": "Pronto para entrega"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Cancelado"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido finalizado"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "nome": "João",
+      "ponto": {
+        "id": 2,
+        "descricao": "Casquinha"
+      },
+      "bebidas": [
+        {
+          "id": 1,
+          "nome": "Água com gás"
+        }
+      ],
+      "complemento": [
+        {
+          "id": 2,
+          "nome": "Calda de chocolate"
+        }
+      ],
+      "statusId": 2,
+      "hamburguer": {
+        "id": 3,
+        "nome": "Sorvete de Doce de Leite",
+        "foto": "https://cdn.pixabay.com/photo/2020/09/06/22/20/ice-cream-5550556_1280.jpg",
+        "descricao": "Tradicional sabor argentino com textura cremosa",
+        "valor": 10,
+        "eh_novidade": true
+      }
+    },
+    {
+      "nome": "Elias",
+      "ponto": {
+        "id": 2,
+        "descricao": "Casquinha"
+      },
+      "bebidas": [
+        {
+          "id": 1,
+          "nome": "Água com gás",
+          "descricao": "Refrescante para acompanhar",
+          "foto": "https://cdn.pixabay.com/photo/2016/11/29/02/34/water-1869853_1280.jpg",
+          "valor": 4,
+          "eh_novidade": false
+        },
+        {
+          "id": 2,
+          "nome": "Café expresso",
+          "descricao": "Pequeno, forte e quente",
+          "foto": "https://cdn.pixabay.com/photo/2015/06/24/00/34/coffee-820517_1280.jpg",
+          "valor": 6,
+          "eh_novidade": true
+        }
+      ],
+      "complemento": [
+        {
+          "id": 1,
+          "nome": "Granulado de chocolate",
+          "descricao": "Cobertura clássica para sorvete",
+          "foto": "https://cdn.pixabay.com/photo/2016/11/29/02/34/sprinkles-1869852_1280.jpg",
+          "valor": 2,
+          "eh_novidade": false
+        },
+        {
+          "id": 2,
+          "nome": "Calda de chocolate",
+          "descricao": "Calda quente de chocolate meio amargo",
+          "foto": "https://cdn.pixabay.com/photo/2020/03/08/10/29/chocolate-4911914_1280.jpg",
+          "valor": 3,
+          "eh_novidade": false
+        }
+      ],
+      "statusId": 1,
+      "hamburguer": null,
+      "id": 2
+    }
+  ],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Granulado de chocolate",
+        "descricao": "Cobertura clássica para sorvete",
+        "foto": "https://cdn.pixabay.com/photo/2016/11/29/02/34/sprinkles-1869852_1280.jpg",
+        "valor": 2,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Calda de chocolate",
+        "descricao": "Calda quente de chocolate meio amargo",
+        "foto": "https://cdn.pixabay.com/photo/2020/03/08/10/29/chocolate-4911914_1280.jpg",
+        "valor": 3,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Água com gás",
+        "descricao": "Refrescante para acompanhar",
+        "foto": "https://cdn.pixabay.com/photo/2016/11/29/02/34/water-1869853_1280.jpg",
+        "valor": 4,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Café expresso",
+        "descricao": "Pequeno, forte e quente",
+        "foto": "https://cdn.pixabay.com/photo/2015/06/24/00/34/coffee-820517_1280.jpg",
+        "valor": 6,
+        "eh_novidade": true
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Combo 3 sabores",
+        "foto": "https://cdn.pixabay.com/photo/2016/07/22/09/59/ice-cream-1536833_1280.jpg",
+        "descricao": "Escolha 3 sabores em um copo médio + 1 cobertura grátis",
+        "valor": 18,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Sorvete de Frutas Vermelhas",
+        "foto": "https://cdn.pixabay.com/photo/2017/08/06/10/29/ice-cream-2588544_1280.jpg",
+        "descricao": "Sabor leve com pedaços de frutas",
+        "valor": 9,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Sorvete de Chocolate Belga",
+        "foto": "https://cdn.pixabay.com/photo/2018/06/01/21/07/chocolate-3448067_1280.jpg",
+        "descricao": "Cremoso e intenso com chocolate importado",
+        "valor": 10,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Sorvete de Doce de Leite",
+        "foto": "https://cdn.pixabay.com/photo/2020/09/06/22/20/ice-cream-5550556_1280.jpg",
+        "descricao": "Tradicional sabor argentino com textura cremosa",
+        "valor": 10,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Sorvete Vegano de Coco",
+        "foto": "https://cdn.pixabay.com/photo/2016/06/15/23/05/ice-cream-1451730_1280.jpg",
+        "descricao": "Feito com leite de coco e sem ingredientes de origem animal",
+        "valor": 11,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
